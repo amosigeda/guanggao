@@ -1,0 +1,1083 @@
+14:58:02,609 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+14:58:02,613 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+14:58:02,613 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+14:58:02,616  INFO ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@dcf3e99: startup date [Wed Mar 15 14:58:02 CST 2017]; root of context hierarchy
+14:58:02,646 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+14:58:02,646 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+14:58:02,647 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+14:58:02,662  INFO XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [config/spring-core.xml]
+14:58:02,740 DEBUG DefaultDocumentLoader:73 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+14:58:02,803 DEBUG PluggableSchemaResolver:141 - Loading schema mappings from [META-INF/spring.schemas]
+14:58:02,808 DEBUG PluggableSchemaResolver:147 - Loaded schema mappings: {http://mybatis.org/schema/mybatis-spring-1.2.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://mybatis.org/schema/mybatis-spring.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+14:58:02,809 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.0.xsd
+14:58:02,852 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/context/spring-context.xsd] in classpath: org/springframework/context/config/spring-context-4.0.xsd
+14:58:02,857 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.0.xsd
+14:58:02,862 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/aop/spring-aop.xsd] in classpath: org/springframework/aop/config/spring-aop-4.0.xsd
+14:58:02,873 DEBUG DefaultBeanDefinitionDocumentReader:108 - Loading bean definitions
+14:58:02,885 DEBUG DefaultNamespaceHandlerResolver:157 - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://mybatis.org/schema/mybatis-spring=org.mybatis.spring.config.NamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+14:58:02,958 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+14:58:02,958 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+14:58:02,958 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+14:58:02,976 DEBUG PathMatchingResourcePatternResolver:553 - Looking for matching resources in directory tree [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert]
+14:58:02,976 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+14:58:02,984 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\base] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+14:58:02,984 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\dao] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+14:58:02,985 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\dao\impl] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+14:58:02,985 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\filter] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+14:58:02,986 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\ip] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+14:58:02,986 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+14:58:02,987 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+14:58:02,988 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\redis] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+14:58:02,989 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\service] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+14:58:02,989 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\servlet] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+14:58:02,989 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+14:58:02,992 DEBUG PathMatchingResourcePatternResolver:354 - Resolved location pattern [classpath*:com/ymei_inc/ymadvert/*/**/*.class] to resources [file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\base\BaseDaoImpl.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\base\IBaseDao.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\dao\IBusinessDao.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\dao\impl\BusinessDaoImpl.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\dao\impl\SaveLogDaoImpl.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\dao\ISaveLogDao.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\filter\MD5Filter.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\ip\IPEntry.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\ip\IPSeeker$IPLocation.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\ip\IPSeeker.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\ip\Utils.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\AdvSent.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\Application.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\Behavior.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\BlackWhite.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\Channel.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\City.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\Constant.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\Product.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\Province.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render\Banner.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render\FullWindow.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render\Notification.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render\PopWindow.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render\RenderAction.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render\RenderInit.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render\RenderSetting.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render\RenderShow.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render\RenderUpdate.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render\Silent.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\SdkAction.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\SdkInit.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\SdkSetting.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\SdkShow.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\SdkUpdate.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\SubChannel.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\redis\BasicRedisSupport.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\redis\LimitCache.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\redis\RedisClient.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\servlet\ADInitServlet.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\servlet\ADSettingServlet.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\servlet\ADShowServlet.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\servlet\SdkJarServlet.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\servlet\TestServlet.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\servlet\UserActionServlet.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\CommonUtil$1.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\CommonUtil.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\Des.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\HttpsUtil$TrustAnyHostnameVerifier.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\HttpsUtil$TrustAnyTrustManager.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\HttpsUtil.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\ImsiUtil.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\MakeOrderId.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\MD5.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\SignUtils.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\StreamStringUtil.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\Util$SSLSocketFactoryEx$1.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\Util$SSLSocketFactoryEx.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\Util.class]]
+14:58:03,008 DEBUG ClassPathBeanDefinitionScanner:284 - Identified candidate component class: file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\dao\impl\BusinessDaoImpl.class]
+14:58:03,008 DEBUG ClassPathBeanDefinitionScanner:284 - Identified candidate component class: file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\dao\impl\SaveLogDaoImpl.class]
+14:58:03,014 DEBUG ClassPathBeanDefinitionScanner:284 - Identified candidate component class: file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\redis\LimitCache.class]
+14:58:03,022 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0]
+14:58:03,024 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.server.session.SessionHandler#76f2b07d]
+14:58:03,024 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [com.ymei_inc.ymadvert.filter.MD5Filter#6ee52dcd]
+14:58:03,025 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.FilterHolder#2781e022]
+14:58:03,026 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.FilterMapping#5faeada1]
+14:58:03,027 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [com.ymei_inc.ymadvert.servlet.UserActionServlet#ea1a8d5]
+14:58:03,027 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletHolder#2bbf4b8b]
+14:58:03,028 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [com.ymei_inc.ymadvert.servlet.ADInitServlet#33c7e1bb]
+14:58:03,028 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletHolder#52feb982]
+14:58:03,028 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [com.ymei_inc.ymadvert.servlet.SdkJarServlet#76b0bfab]
+14:58:03,029 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletHolder#3043fe0e]
+14:58:03,029 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [com.ymei_inc.ymadvert.servlet.ADSettingServlet#bd8db5a]
+14:58:03,029 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletHolder#80503]
+14:58:03,030 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [com.ymei_inc.ymadvert.servlet.ADShowServlet#69a3d1d]
+14:58:03,030 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletHolder#480bdb19]
+14:58:03,030 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [com.ymei_inc.ymadvert.servlet.TestServlet#7d70d1b1]
+14:58:03,031 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletHolder#3cb1ffe6]
+14:58:03,031 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletMapping#467aecef]
+14:58:03,031 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletMapping#7e2d773b]
+14:58:03,032 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletMapping#307f6b8c]
+14:58:03,032 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletMapping#6f195bc3]
+14:58:03,032 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletMapping#1a8a8f7c]
+14:58:03,032 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletMapping#631330c]
+14:58:03,033 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletHandler#c46bcd4]
+14:58:03,033 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletContextHandler#3d921e20]
+14:58:03,033 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.server.handler.DefaultHandler#fad74ee]
+14:58:03,034  INFO XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [config/spring-redis.xml]
+14:58:03,042 DEBUG DefaultDocumentLoader:73 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+14:58:03,043 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-2.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-2.0.xsd
+14:58:03,053 DEBUG DefaultBeanDefinitionDocumentReader:108 - Loading bean definitions
+14:58:03,055 DEBUG DefaultBeanDefinitionDocumentReader:267 - Imported 3 bean definitions from relative location [spring-redis.xml]
+14:58:03,055  INFO XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [config/spring-mybatis.xml]
+14:58:03,067 DEBUG DefaultDocumentLoader:73 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+14:58:03,069 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+14:58:03,079 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/tx/spring-tx-3.0.xsd] in classpath: org/springframework/transaction/config/spring-tx-3.0.xsd
+14:58:03,081 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+14:58:03,083 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/aop/spring-aop-3.0.xsd] in classpath: org/springframework/aop/config/spring-aop-3.0.xsd
+14:58:03,086 DEBUG DefaultBeanDefinitionDocumentReader:108 - Loading bean definitions
+14:58:03,109 DEBUG DefaultBeanDefinitionDocumentReader:267 - Imported 13 bean definitions from relative location [spring-mybatis.xml]
+14:58:03,109  INFO XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [config/spring-servlet.xml]
+14:58:03,110 DEBUG DefaultDocumentLoader:73 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+14:58:03,112 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-2.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-2.0.xsd
+14:58:03,118 DEBUG DefaultBeanDefinitionDocumentReader:108 - Loading bean definitions
+14:58:03,118 DEBUG DefaultBeanDefinitionDocumentReader:267 - Imported 0 bean definitions from relative location [spring-servlet.xml]
+14:58:03,118 DEBUG XmlBeanDefinitionReader:223 - Loaded 26 bean definitions from location pattern [config/spring-core.xml]
+14:58:03,119 DEBUG ClassPathXmlApplicationContext:543 - Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@dcf3e99: org.springframework.beans.factory.support.DefaultListableBeanFactory@47db50c5: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,businessDao,saveLogDao,limitCache,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,Server,jedisPoolConfig,jedisPool,redisClient,master,slave,dataSource,sqlSessionFactory,sqlSession,dynamicSqlSession,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdvice,allManagerMethod,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0]; root of factory hierarchy
+14:58:03,198 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:58:03,198 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:58:03,205 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+14:58:03,206 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:58:03,245 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+14:58:03,246 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+14:58:03,246 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0' to allow for resolving potential circular references
+14:58:03,269 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+14:58:03,270  INFO PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [properties/redis.properties]
+14:58:03,270  INFO PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [properties/server.properties]
+14:58:03,279  INFO PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [properties/jdbc.properties]
+14:58:03,294 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:58:03,294 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:58:03,295 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+14:58:03,295 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:58:03,295 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:58:03,295 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:58:03,295 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+14:58:03,296 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:58:03,296 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:58:03,297 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:58:03,314 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+14:58:03,315 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:58:03,315 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+14:58:03,315 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+14:58:03,315 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+14:58:03,315 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+14:58:03,315 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+14:58:03,315 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+14:58:03,316 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+14:58:03,316 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+14:58:03,316 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+14:58:03,316 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+14:58:03,340 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+14:58:03,346 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+14:58:03,368 DEBUG ClassPathXmlApplicationContext:649 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@5c30a9b0]
+14:58:03,369 DEBUG ClassPathXmlApplicationContext:673 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@50b472aa]
+14:58:03,371 DEBUG DefaultListableBeanFactory:669 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@47db50c5: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,businessDao,saveLogDao,limitCache,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,Server,jedisPoolConfig,jedisPool,redisClient,master,slave,dataSource,sqlSessionFactory,sqlSession,dynamicSqlSession,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdvice,allManagerMethod,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
+14:58:03,372 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+14:58:03,372 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+14:58:03,372 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+14:58:03,372 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+14:58:03,372 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+14:58:03,372 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'businessDao'
+14:58:03,372 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'businessDao'
+14:58:03,374 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:03,374 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:03,375 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
+14:58:03,378 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+14:58:03,378 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+14:58:03,378 DEBUG BeanFactoryAdvisorRetrievalHelper:87 - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:03,378 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:03,378 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:03,379 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' to allow for resolving potential circular references
+14:58:03,381 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'allManagerMethod'
+14:58:03,414 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'allManagerMethod'
+14:58:03,414 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:03,417 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' to allow for resolving potential circular references
+14:58:03,419 DEBUG BeanFactoryAdvisorRetrievalHelper:87 - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:03,419 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:03,419 DEBUG BeanFactoryAdvisorRetrievalHelper:87 - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:03,419 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:03,616 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+14:58:03,617 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:03,617 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:03,621 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.dao.impl.BusinessDaoImpl]: AutowiredFieldElement for protected org.springmore.core.datasource.DynamicSqlSessionTemplate com.ymei_inc.ymadvert.dao.impl.BusinessDaoImpl.session
+14:58:03,621 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'businessDao' to allow for resolving potential circular references
+14:58:03,623 DEBUG InjectionMetadata:85 - Processing injected method of bean 'businessDao': AutowiredFieldElement for protected org.springmore.core.datasource.DynamicSqlSessionTemplate com.ymei_inc.ymadvert.dao.impl.BusinessDaoImpl.session
+14:58:03,624 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:03,625 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:03,634 DEBUG LogFactory:46 - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+14:58:03,635 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'dynamicSqlSession'
+14:58:03,636 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'dynamicSqlSession'
+14:58:03,636 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:03,636 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:03,642 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'sqlSession'
+14:58:03,642 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'sqlSession'
+14:58:03,642 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:03,643 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:03,643 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'sqlSessionFactory'
+14:58:03,644 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'sqlSessionFactory'
+14:58:03,645 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'sqlSessionFactory' to allow for resolving potential circular references
+14:58:03,648 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'dataSource'
+14:58:03,648 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'dataSource'
+14:58:03,648 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:03,668 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:03,670 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+14:58:03,673 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'master'
+14:58:03,673 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'master'
+14:58:03,674 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:03,674 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:03,682  INFO MLog:80 - MLog clients using log4j logging.
+14:58:03,860  INFO C3P0Registry:204 - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+14:58:03,870 DEBUG DynamicPooledDataSourceManagerMBean:236 - MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge3l09m1lx8klu857ii1|ea6147e] registered.
+14:58:03,878 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'master' to allow for resolving potential circular references
+14:58:03,889 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:03,889 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:03,889 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:03,889 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:03,918 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'master'
+14:58:03,919 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'slave'
+14:58:03,919 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'slave'
+14:58:03,919 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:03,919 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:03,923 DEBUG DynamicPooledDataSourceManagerMBean:236 - MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge3l09m1lx8klu857ii1|d86a6f] registered.
+14:58:03,924 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'slave' to allow for resolving potential circular references
+14:58:03,925 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:03,926 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:03,926 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:03,926 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:03,927 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'slave'
+14:58:03,930 DEBUG DefaultListableBeanFactory:1595 - Invoking afterPropertiesSet() on bean with name 'dataSource'
+14:58:03,930 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:03,930 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:03,931 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:03,931 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:03,934 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'dataSource'
+14:58:03,935 DEBUG DefaultListableBeanFactory:1595 - Invoking afterPropertiesSet() on bean with name 'sqlSessionFactory'
+14:58:04,169 DEBUG SqlSessionFactoryBean:46 - Parsed configuration file: 'class path resource [mybatis/mybatis-config.xml]'
+14:58:04,170 DEBUG SqlSessionFactoryBean:46 - Property 'mapperLocations' was not specified or no matching resources found
+14:58:04,170 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,171 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,171 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,171 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,174 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'sqlSessionFactory'
+14:58:04,174 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,175 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,175 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,175 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,191 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'sqlSession' to allow for resolving potential circular references
+14:58:04,193 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,193 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,193 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,193 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,196 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'sqlSession'
+14:58:04,197 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'dynamicSqlSession' to allow for resolving potential circular references
+14:58:04,198 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,198 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,198 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,199 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,201 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'dynamicSqlSession'
+14:58:04,201 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'businessDao' to bean named 'dynamicSqlSession'
+14:58:04,201 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,201 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,202 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,202 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,204 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'businessDao'
+14:58:04,204 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'saveLogDao'
+14:58:04,205 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'saveLogDao'
+14:58:04,205 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,205 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,205 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.dao.impl.SaveLogDaoImpl]: AutowiredFieldElement for protected org.springmore.core.datasource.DynamicSqlSessionTemplate com.ymei_inc.ymadvert.dao.impl.SaveLogDaoImpl.session
+14:58:04,205 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'saveLogDao' to allow for resolving potential circular references
+14:58:04,206 DEBUG InjectionMetadata:85 - Processing injected method of bean 'saveLogDao': AutowiredFieldElement for protected org.springmore.core.datasource.DynamicSqlSessionTemplate com.ymei_inc.ymadvert.dao.impl.SaveLogDaoImpl.session
+14:58:04,206 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'dynamicSqlSession'
+14:58:04,207 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'saveLogDao' to bean named 'dynamicSqlSession'
+14:58:04,207 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,207 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,207 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,207 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,208 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'saveLogDao'
+14:58:04,209 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'limitCache'
+14:58:04,209 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'limitCache'
+14:58:04,209 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,209 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,213 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.redis.LimitCache]: AutowiredFieldElement for private redis.clients.jedis.JedisPool com.ymei_inc.ymadvert.redis.BasicRedisSupport.jedisPool
+14:58:04,213 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.redis.LimitCache]: AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.RedisClient com.ymei_inc.ymadvert.redis.BasicRedisSupport.redisClient
+14:58:04,213 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'limitCache' to allow for resolving potential circular references
+14:58:04,215 DEBUG InjectionMetadata:85 - Processing injected method of bean 'limitCache': AutowiredFieldElement for private redis.clients.jedis.JedisPool com.ymei_inc.ymadvert.redis.BasicRedisSupport.jedisPool
+14:58:04,215 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'jedisPool'
+14:58:04,215 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'jedisPool'
+14:58:04,215 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,215 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,222 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'jedisPoolConfig'
+14:58:04,222 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'jedisPoolConfig'
+14:58:04,222 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,222 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,223 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'jedisPoolConfig' to allow for resolving potential circular references
+14:58:04,226 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,226 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,226 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,226 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,229 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'jedisPoolConfig'
+14:58:04,244 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'jedisPool' to allow for resolving potential circular references
+14:58:04,246 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,246 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,246 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,246 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,249 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'jedisPool'
+14:58:04,249 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'limitCache' to bean named 'jedisPool'
+14:58:04,249 DEBUG InjectionMetadata:85 - Processing injected method of bean 'limitCache': AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.RedisClient com.ymei_inc.ymadvert.redis.BasicRedisSupport.redisClient
+14:58:04,250 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'redisClient'
+14:58:04,250 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'redisClient'
+14:58:04,250 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,250 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,250 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'jedisPool'
+14:58:04,253 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'redisClient' to allow for resolving potential circular references
+14:58:04,254 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,254 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,254 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,254 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,255 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'redisClient'
+14:58:04,255 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'limitCache' to bean named 'redisClient'
+14:58:04,255 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,255 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,255 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,255 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,256 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'limitCache'
+14:58:04,256 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+14:58:04,256 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'Server'
+14:58:04,256 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'Server'
+14:58:04,256 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,256 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,570 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'Server' to allow for resolving potential circular references
+14:58:04,575 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'Connector'
+14:58:04,583 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,583 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,594 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,597 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,598 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,598 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,610 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'Connector'
+14:58:04,610 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'handlers'
+14:58:04,614 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,614 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,617 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletContextHandler#3d921e20'
+14:58:04,620 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,620 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,647 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.server.session.SessionHandler#76f2b07d'
+14:58:04,647 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,647 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,652 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,653 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,653 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,653 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,656 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.server.session.SessionHandler#76f2b07d'
+14:58:04,656 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletHandler#c46bcd4'
+14:58:04,656 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,657 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,675 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.FilterHolder#2781e022'
+14:58:04,676 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,676 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,679 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'com.ymei_inc.ymadvert.filter.MD5Filter#6ee52dcd'
+14:58:04,680 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,680 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,681 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,681 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,681 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,681 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,682 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'com.ymei_inc.ymadvert.filter.MD5Filter#6ee52dcd'
+14:58:04,683 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,683 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,683 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,683 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,685 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.FilterHolder#2781e022'
+14:58:04,685 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.FilterMapping#5faeada1'
+14:58:04,685 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,686 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,687 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,687 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,687 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,687 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,688 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.FilterMapping#5faeada1'
+14:58:04,688 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#2bbf4b8b'
+14:58:04,689 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,689 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,692 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'com.ymei_inc.ymadvert.servlet.UserActionServlet#ea1a8d5'
+14:58:04,693 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,693 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,699 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.UserActionServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.UserActionServlet.limitCache
+14:58:04,699 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.UserActionServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.UserActionServlet.saveLogDao
+14:58:04,701 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.UserActionServlet#ea1a8d5': AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.UserActionServlet.limitCache
+14:58:04,701 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'limitCache'
+14:58:04,701 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.UserActionServlet#ea1a8d5' to bean named 'limitCache'
+14:58:04,701 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.UserActionServlet#ea1a8d5': AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.UserActionServlet.saveLogDao
+14:58:04,702 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'saveLogDao'
+14:58:04,702 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.UserActionServlet#ea1a8d5' to bean named 'saveLogDao'
+14:58:04,702 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,702 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,702 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,702 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,703 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'com.ymei_inc.ymadvert.servlet.UserActionServlet#ea1a8d5'
+14:58:04,704 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,704 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,704 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,704 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,707 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#2bbf4b8b'
+14:58:04,707 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#52feb982'
+14:58:04,708 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,708 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,708 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'com.ymei_inc.ymadvert.servlet.ADInitServlet#33c7e1bb'
+14:58:04,709 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,709 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,711 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.ADInitServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.ADInitServlet.limitCache
+14:58:04,712 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.ADInitServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.ADInitServlet.saveLogDao
+14:58:04,713 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.ADInitServlet#33c7e1bb': AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.ADInitServlet.limitCache
+14:58:04,713 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'limitCache'
+14:58:04,713 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.ADInitServlet#33c7e1bb' to bean named 'limitCache'
+14:58:04,713 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.ADInitServlet#33c7e1bb': AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.ADInitServlet.saveLogDao
+14:58:04,714 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'saveLogDao'
+14:58:04,714 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.ADInitServlet#33c7e1bb' to bean named 'saveLogDao'
+14:58:04,714 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,714 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,715 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,715 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,716 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'com.ymei_inc.ymadvert.servlet.ADInitServlet#33c7e1bb'
+14:58:04,716 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,716 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,716 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,717 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,717 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#52feb982'
+14:58:04,717 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#3043fe0e'
+14:58:04,718 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,718 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,718 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'com.ymei_inc.ymadvert.servlet.SdkJarServlet#76b0bfab'
+14:58:04,719 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,719 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,721 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.SdkJarServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.SdkJarServlet.limitCache
+14:58:04,722 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.SdkJarServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.SdkJarServlet.saveLogDao
+14:58:04,722 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.SdkJarServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.IBusinessDao com.ymei_inc.ymadvert.servlet.SdkJarServlet.businessDao
+14:58:04,723 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.SdkJarServlet#76b0bfab': AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.SdkJarServlet.limitCache
+14:58:04,723 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'limitCache'
+14:58:04,723 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.SdkJarServlet#76b0bfab' to bean named 'limitCache'
+14:58:04,723 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.SdkJarServlet#76b0bfab': AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.SdkJarServlet.saveLogDao
+14:58:04,724 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'saveLogDao'
+14:58:04,724 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.SdkJarServlet#76b0bfab' to bean named 'saveLogDao'
+14:58:04,724 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.SdkJarServlet#76b0bfab': AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.IBusinessDao com.ymei_inc.ymadvert.servlet.SdkJarServlet.businessDao
+14:58:04,725 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'businessDao'
+14:58:04,725 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.SdkJarServlet#76b0bfab' to bean named 'businessDao'
+14:58:04,725 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,725 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,725 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,726 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,726 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'com.ymei_inc.ymadvert.servlet.SdkJarServlet#76b0bfab'
+14:58:04,727 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,727 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,727 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,727 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,728 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#3043fe0e'
+14:58:04,728 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#80503'
+14:58:04,729 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,729 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,729 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'com.ymei_inc.ymadvert.servlet.ADSettingServlet#bd8db5a'
+14:58:04,730 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,730 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,732 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.ADSettingServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.ADSettingServlet.limitCache
+14:58:04,732 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.ADSettingServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.ADSettingServlet.saveLogDao
+14:58:04,732 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.ADSettingServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.IBusinessDao com.ymei_inc.ymadvert.servlet.ADSettingServlet.businessDao
+14:58:04,733 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.ADSettingServlet#bd8db5a': AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.ADSettingServlet.limitCache
+14:58:04,733 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'limitCache'
+14:58:04,734 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.ADSettingServlet#bd8db5a' to bean named 'limitCache'
+14:58:04,734 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.ADSettingServlet#bd8db5a': AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.ADSettingServlet.saveLogDao
+14:58:04,734 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'saveLogDao'
+14:58:04,734 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.ADSettingServlet#bd8db5a' to bean named 'saveLogDao'
+14:58:04,735 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.ADSettingServlet#bd8db5a': AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.IBusinessDao com.ymei_inc.ymadvert.servlet.ADSettingServlet.businessDao
+14:58:04,735 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'businessDao'
+14:58:04,735 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.ADSettingServlet#bd8db5a' to bean named 'businessDao'
+14:58:04,735 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,736 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,736 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,736 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,737 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'com.ymei_inc.ymadvert.servlet.ADSettingServlet#bd8db5a'
+14:58:04,737 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,737 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,738 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,738 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,738 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#80503'
+14:58:04,738 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#480bdb19'
+14:58:04,739 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,739 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,739 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'com.ymei_inc.ymadvert.servlet.ADShowServlet#69a3d1d'
+14:58:04,740 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,740 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,741 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.ADShowServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.ADShowServlet.limitCache
+14:58:04,741 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.ADShowServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.ADShowServlet.saveLogDao
+14:58:04,742 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.ADShowServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.IBusinessDao com.ymei_inc.ymadvert.servlet.ADShowServlet.businessDao
+14:58:04,743 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.ADShowServlet#69a3d1d': AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.ADShowServlet.limitCache
+14:58:04,743 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'limitCache'
+14:58:04,743 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.ADShowServlet#69a3d1d' to bean named 'limitCache'
+14:58:04,743 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.ADShowServlet#69a3d1d': AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.ADShowServlet.saveLogDao
+14:58:04,743 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'saveLogDao'
+14:58:04,743 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.ADShowServlet#69a3d1d' to bean named 'saveLogDao'
+14:58:04,744 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.ADShowServlet#69a3d1d': AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.IBusinessDao com.ymei_inc.ymadvert.servlet.ADShowServlet.businessDao
+14:58:04,744 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'businessDao'
+14:58:04,744 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.ADShowServlet#69a3d1d' to bean named 'businessDao'
+14:58:04,744 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,744 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,744 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,744 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,745 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'com.ymei_inc.ymadvert.servlet.ADShowServlet#69a3d1d'
+14:58:04,745 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,745 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,745 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,746 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,746 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#480bdb19'
+14:58:04,746 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#3cb1ffe6'
+14:58:04,746 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,746 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,747 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'com.ymei_inc.ymadvert.servlet.TestServlet#7d70d1b1'
+14:58:04,747 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,747 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,748 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.TestServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.TestServlet.limitCache
+14:58:04,748 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.TestServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.TestServlet.saveLogDao
+14:58:04,748 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.TestServlet#7d70d1b1': AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.TestServlet.limitCache
+14:58:04,749 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'limitCache'
+14:58:04,749 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.TestServlet#7d70d1b1' to bean named 'limitCache'
+14:58:04,749 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.TestServlet#7d70d1b1': AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.TestServlet.saveLogDao
+14:58:04,749 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'saveLogDao'
+14:58:04,749 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.TestServlet#7d70d1b1' to bean named 'saveLogDao'
+14:58:04,749 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,750 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,750 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,750 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,750 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'com.ymei_inc.ymadvert.servlet.TestServlet#7d70d1b1'
+14:58:04,750 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,751 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,751 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,751 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,751 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#3cb1ffe6'
+14:58:04,751 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#467aecef'
+14:58:04,752 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,752 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,753 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,753 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,753 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,754 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,754 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#467aecef'
+14:58:04,755 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#7e2d773b'
+14:58:04,755 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,755 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,755 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,755 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,756 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,756 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,756 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#7e2d773b'
+14:58:04,756 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#307f6b8c'
+14:58:04,756 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,756 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,757 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,757 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,757 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,757 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,757 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#307f6b8c'
+14:58:04,757 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#6f195bc3'
+14:58:04,757 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,757 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,758 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,758 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,758 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,758 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,758 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#6f195bc3'
+14:58:04,758 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#1a8a8f7c'
+14:58:04,758 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,759 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,759 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,759 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,759 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,759 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,759 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#1a8a8f7c'
+14:58:04,759 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#631330c'
+14:58:04,760 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,760 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,760 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,760 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,760 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,760 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,760 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#631330c'
+14:58:04,763 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,763 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,763 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,763 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,765 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletHandler#c46bcd4'
+14:58:04,765 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,766 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,766 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,766 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,770 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletContextHandler#3d921e20'
+14:58:04,771 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.server.handler.DefaultHandler#fad74ee'
+14:58:04,771 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,771 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,777 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,777 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,777 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,777 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,778 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.server.handler.DefaultHandler#fad74ee'
+14:58:04,779 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,779 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,779 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,779 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,780 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'handlers'
+14:58:04,781 DEBUG DefaultListableBeanFactory:1653 - Invoking init method  'start' on bean with name 'Server'
+14:58:04,873 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,873 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,873 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,873 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,875 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'Server'
+14:58:04,875 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'jedisPoolConfig'
+14:58:04,875 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'jedisPool'
+14:58:04,876 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'redisClient'
+14:58:04,876 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'master'
+14:58:04,876 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'slave'
+14:58:04,876 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'dataSource'
+14:58:04,876 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'sqlSessionFactory'
+14:58:04,876 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'sqlSession'
+14:58:04,876 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'dynamicSqlSession'
+14:58:04,876 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'transactionManager'
+14:58:04,876 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'transactionManager'
+14:58:04,876 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,876 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,889 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+14:58:04,892 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'dataSource'
+14:58:04,892 DEBUG DefaultListableBeanFactory:1595 - Invoking afterPropertiesSet() on bean with name 'transactionManager'
+14:58:04,892 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,892 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,892 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,893 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,894 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'transactionManager'
+14:58:04,894 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+14:58:04,894 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+14:58:04,895 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+14:58:04,895 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0' to allow for resolving potential circular references
+14:58:04,897 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+14:58:04,897 DEBUG DefaultListableBeanFactory:1595 - Invoking afterPropertiesSet() on bean with name 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+14:58:04,897 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+14:58:04,897 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,897 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'txAdvice'
+14:58:04,897 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'txAdvice'
+14:58:04,897 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'txAdvice' to allow for resolving potential circular references
+14:58:04,897 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'transactionManager'
+14:58:04,898 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)'
+14:58:04,898 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,898 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,899 DEBUG NameMatchTransactionAttributeSource:96 - Adding transactional method [save*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+14:58:04,900 DEBUG NameMatchTransactionAttributeSource:96 - Adding transactional method [delete*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+14:58:04,900 DEBUG NameMatchTransactionAttributeSource:96 - Adding transactional method [update*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+14:58:04,900 DEBUG NameMatchTransactionAttributeSource:96 - Adding transactional method [proc*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+14:58:04,900 DEBUG NameMatchTransactionAttributeSource:96 - Adding transactional method [select*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+14:58:04,900 DEBUG NameMatchTransactionAttributeSource:96 - Adding transactional method [*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+14:58:04,900 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,900 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,900 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+14:58:04,900 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,901 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean '(inner bean)'
+14:58:04,901 DEBUG DefaultListableBeanFactory:1595 - Invoking afterPropertiesSet() on bean with name 'txAdvice'
+14:58:04,901 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'txAdvice'
+14:58:04,901 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+14:58:04,901 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+14:58:04,901 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+14:58:04,910 DEBUG ClassPathXmlApplicationContext:700 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@2a39fe6a]
+14:58:04,910 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'lifecycleProcessor'
+14:58:04,911 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'sqlSessionFactory'
+14:58:04,912 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+14:58:04,912 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+14:58:04,913 DEBUG PropertySourcesPropertyResolver:103 - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+14:58:04,913  INFO App:40 - server Start successfully
+14:59:17,876 DEBUG SqlSessionUtils:46 - Creating a new SqlSession
+14:59:17,893 DEBUG SqlSessionUtils:46 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6911bfd0] was not registered for synchronization because synchronization is not active
+14:59:17,938 DEBUG DataSourceUtils:110 - Fetching JDBC Connection from DataSource
+14:59:17,938 DEBUG DynamicDataSource:70 - jdbcUrl:jdbc:mysql://localhost:3306/ymadvert?useUnicode=true&amp;characterEncoding=UTF-8
+14:59:17,957 DEBUG BasicResourcePool:404 - incremented pending_acquires: 1
+14:59:17,957 DEBUG BasicResourcePool:404 - incremented pending_acquires: 2
+14:59:17,958 DEBUG BasicResourcePool:404 - incremented pending_acquires: 3
+14:59:17,958 DEBUG BasicResourcePool:404 - incremented pending_acquires: 4
+14:59:17,958 DEBUG BasicResourcePool:404 - incremented pending_acquires: 5
+14:59:17,958 DEBUG BasicResourcePool:404 - incremented pending_acquires: 6
+14:59:17,958 DEBUG BasicResourcePool:404 - incremented pending_acquires: 7
+14:59:17,959 DEBUG BasicResourcePool:404 - incremented pending_acquires: 8
+14:59:17,959 DEBUG BasicResourcePool:404 - incremented pending_acquires: 9
+14:59:17,959 DEBUG BasicResourcePool:404 - incremented pending_acquires: 10
+14:59:17,959 DEBUG BasicResourcePool:404 - incremented pending_acquires: 11
+14:59:17,959 DEBUG BasicResourcePool:404 - incremented pending_acquires: 12
+14:59:17,959 DEBUG BasicResourcePool:404 - incremented pending_acquires: 13
+14:59:17,960 DEBUG BasicResourcePool:404 - incremented pending_acquires: 14
+14:59:17,960 DEBUG BasicResourcePool:404 - incremented pending_acquires: 15
+14:59:17,960 DEBUG BasicResourcePool:404 - incremented pending_acquires: 16
+14:59:17,960 DEBUG BasicResourcePool:404 - incremented pending_acquires: 17
+14:59:17,960 DEBUG BasicResourcePool:404 - incremented pending_acquires: 18
+14:59:17,961 DEBUG BasicResourcePool:404 - incremented pending_acquires: 19
+14:59:17,961 DEBUG BasicResourcePool:404 - incremented pending_acquires: 20
+14:59:17,961 DEBUG BasicResourcePool:404 - incremented pending_acquires: 21
+14:59:17,961 DEBUG BasicResourcePool:404 - incremented pending_acquires: 22
+14:59:17,961 DEBUG BasicResourcePool:404 - incremented pending_acquires: 23
+14:59:17,961 DEBUG BasicResourcePool:404 - incremented pending_acquires: 24
+14:59:17,962 DEBUG BasicResourcePool:404 - incremented pending_acquires: 25
+14:59:17,962 DEBUG BasicResourcePool:404 - incremented pending_acquires: 26
+14:59:17,962 DEBUG BasicResourcePool:404 - incremented pending_acquires: 27
+14:59:17,962 DEBUG BasicResourcePool:404 - incremented pending_acquires: 28
+14:59:17,962 DEBUG BasicResourcePool:404 - incremented pending_acquires: 29
+14:59:17,962 DEBUG BasicResourcePool:404 - incremented pending_acquires: 30
+14:59:17,963 DEBUG BasicResourcePool:404 - incremented pending_acquires: 31
+14:59:17,963 DEBUG BasicResourcePool:404 - incremented pending_acquires: 32
+14:59:17,963 DEBUG BasicResourcePool:404 - incremented pending_acquires: 33
+14:59:17,963 DEBUG BasicResourcePool:404 - incremented pending_acquires: 34
+14:59:17,963 DEBUG BasicResourcePool:404 - incremented pending_acquires: 35
+14:59:17,963 DEBUG BasicResourcePool:404 - incremented pending_acquires: 36
+14:59:17,964 DEBUG BasicResourcePool:404 - incremented pending_acquires: 37
+14:59:17,964 DEBUG BasicResourcePool:404 - incremented pending_acquires: 38
+14:59:17,964 DEBUG BasicResourcePool:404 - incremented pending_acquires: 39
+14:59:17,965 DEBUG BasicResourcePool:404 - incremented pending_acquires: 40
+14:59:17,965 DEBUG BasicResourcePool:404 - incremented pending_acquires: 41
+14:59:17,965 DEBUG BasicResourcePool:404 - incremented pending_acquires: 42
+14:59:17,965 DEBUG BasicResourcePool:404 - incremented pending_acquires: 43
+14:59:17,965 DEBUG BasicResourcePool:404 - incremented pending_acquires: 44
+14:59:17,966 DEBUG BasicResourcePool:404 - incremented pending_acquires: 45
+14:59:17,966 DEBUG BasicResourcePool:404 - incremented pending_acquires: 46
+14:59:17,966 DEBUG BasicResourcePool:404 - incremented pending_acquires: 47
+14:59:17,966 DEBUG BasicResourcePool:404 - incremented pending_acquires: 48
+14:59:17,966 DEBUG BasicResourcePool:404 - incremented pending_acquires: 49
+14:59:17,966 DEBUG BasicResourcePool:404 - incremented pending_acquires: 50
+14:59:17,967 DEBUG BasicResourcePool:289 - com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 config: [start -> 10; min -> 50; max -> 100; inc -> 5; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; mox_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> true; debug_store_checkout_exceptions -> false]
+14:59:17,968  INFO AbstractPoolBackedDataSource:462 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> true, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge3l09m1lx8klu857ii1|ea6147e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge3l09m1lx8klu857ii1|ea6147e, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://localhost:3306/ymadvert?useUnicode=true&amp;characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 50, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+14:59:17,968 DEBUG BasicResourcePool:538 - acquire test -- pool size: 0; target_pool_size: 50; desired target? 1
+14:59:17,968 DEBUG BasicResourcePool:1291 - awaitAvailable(): [unknown]
+14:59:17,968 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 0, unused: 0, excluded: 0]
+14:59:18,184 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,184 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,184 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,184 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 1, unused: 1, excluded: 0]
+14:59:18,185 DEBUG BasicResourcePool:422 - decremented pending_acquires: 49
+14:59:18,185 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,185 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,185 DEBUG BasicResourcePool:422 - decremented pending_acquires: 48
+14:59:18,185 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,185 DEBUG BasicResourcePool:422 - decremented pending_acquires: 47
+14:59:18,185 DEBUG SpringManagedTransaction:46 - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@573f6dc0] will not be managed by Spring
+14:59:18,189 DEBUG saveSdkInit:46 - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@573f6dc0]
+14:59:18,192 DEBUG saveSdkInit:46 - ==>  Preparing: INSERT INTO sdk_user(channelKey,scKey,imei,sdkVersion,phoneModel,osVersion,imsi,network,operator, softPackageName,softVersion,root,mac,phoneTotalMemory,phoneAvailableSize, sdcardAvailableSize,ramTotalMemory,ramAvailableSize,sdcardTotalMemory, appListLength,appList,firmwareVersion,phoneUdid,resolution,createTime, phoneBrand,ifSystem,sdcardState,registTime,city,province) values (?,?,?,?,?, ?,?,?,?, ?,?,?,?, ?,?,?, ?,?,?, ?,?,?,?,?,now(), ?,?,?,?,?,? ) 
+14:59:18,206 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,206 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 4, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,206 DEBUG BasicResourcePool:422 - decremented pending_acquires: 46
+14:59:18,210 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,210 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 5, unused: 4, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,210 DEBUG BasicResourcePool:422 - decremented pending_acquires: 45
+14:59:18,215 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,215 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 6, unused: 5, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,215 DEBUG BasicResourcePool:422 - decremented pending_acquires: 44
+14:59:18,215 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,216 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 7, unused: 6, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,216 DEBUG BasicResourcePool:422 - decremented pending_acquires: 43
+14:59:18,220 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,220 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 8, unused: 7, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,220 DEBUG BasicResourcePool:422 - decremented pending_acquires: 42
+14:59:18,226 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,226 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 9, unused: 8, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,226 DEBUG BasicResourcePool:422 - decremented pending_acquires: 41
+14:59:18,231 DEBUG saveSdkInit:46 - ==> Parameters: null, null, null, null, null, null, null, null, 1(String), null, null, 0(Integer), null, 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), tete(String), null, null, null, null, 0(Integer), 0(Integer), 2017-01-31(String), 深圳(String), 广东(String)
+14:59:18,239 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,239 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 10, unused: 9, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,240 DEBUG BasicResourcePool:422 - decremented pending_acquires: 40
+14:59:18,247 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,247 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 11, unused: 10, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,247 DEBUG BasicResourcePool:422 - decremented pending_acquires: 39
+14:59:18,249 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,250 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 12, unused: 11, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,250 DEBUG BasicResourcePool:422 - decremented pending_acquires: 38
+14:59:18,262 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,262 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 13, unused: 12, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,262 DEBUG BasicResourcePool:422 - decremented pending_acquires: 37
+14:59:18,263 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,264 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 14, unused: 13, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,264 DEBUG BasicResourcePool:422 - decremented pending_acquires: 36
+14:59:18,270 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,270 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 15, unused: 14, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,271 DEBUG BasicResourcePool:422 - decremented pending_acquires: 35
+14:59:18,271 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,271 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 16, unused: 15, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,272 DEBUG BasicResourcePool:422 - decremented pending_acquires: 34
+14:59:18,277 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,277 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 17, unused: 16, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,277 DEBUG BasicResourcePool:422 - decremented pending_acquires: 33
+14:59:18,281 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,281 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 18, unused: 17, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,281 DEBUG BasicResourcePool:422 - decremented pending_acquires: 32
+14:59:18,284 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,285 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 19, unused: 18, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,285 DEBUG BasicResourcePool:422 - decremented pending_acquires: 31
+14:59:18,293 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,316 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 20, unused: 19, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,316 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,316 DEBUG BasicResourcePool:422 - decremented pending_acquires: 30
+14:59:18,316 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,316 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 21, unused: 20, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,316 DEBUG BasicResourcePool:422 - decremented pending_acquires: 29
+14:59:18,317 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 22, unused: 21, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,317 DEBUG BasicResourcePool:422 - decremented pending_acquires: 28
+14:59:18,323 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,323 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 23, unused: 22, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,323 DEBUG BasicResourcePool:422 - decremented pending_acquires: 27
+14:59:18,323 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,323 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 24, unused: 23, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,324 DEBUG BasicResourcePool:422 - decremented pending_acquires: 26
+14:59:18,326 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,326 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 25, unused: 24, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,327 DEBUG BasicResourcePool:422 - decremented pending_acquires: 25
+14:59:18,330 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,330 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 26, unused: 25, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,330 DEBUG BasicResourcePool:422 - decremented pending_acquires: 24
+14:59:18,334 DEBUG SqlSessionUtils:46 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6911bfd0]
+14:59:18,335 DEBUG DataSourceUtils:327 - Returning JDBC Connection to DataSource
+14:59:18,336 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 26, unused: 25, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,337 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,337 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 27, unused: 26, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,337 DEBUG BasicResourcePool:422 - decremented pending_acquires: 23
+14:59:18,340 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,341 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 28, unused: 27, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,341 DEBUG BasicResourcePool:422 - decremented pending_acquires: 22
+14:59:18,341 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,341 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 29, unused: 28, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,341 DEBUG BasicResourcePool:422 - decremented pending_acquires: 21
+14:59:18,345 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,345 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 30, unused: 29, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,346 DEBUG BasicResourcePool:422 - decremented pending_acquires: 20
+14:59:18,350 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,350 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 31, unused: 30, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,351 DEBUG BasicResourcePool:422 - decremented pending_acquires: 19
+14:59:18,352 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,352 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 32, unused: 31, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,352 DEBUG BasicResourcePool:422 - decremented pending_acquires: 18
+14:59:18,352 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,353 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 33, unused: 32, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,353 DEBUG BasicResourcePool:422 - decremented pending_acquires: 17
+14:59:18,358 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,358 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 34, unused: 33, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,358 DEBUG BasicResourcePool:422 - decremented pending_acquires: 16
+14:59:18,365 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,365 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,365 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 35, unused: 34, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,365 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 36, unused: 35, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,365 DEBUG BasicResourcePool:422 - decremented pending_acquires: 15
+14:59:18,367 DEBUG BasicResourcePool:422 - decremented pending_acquires: 14
+14:59:18,368 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,369 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 37, unused: 36, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,369 DEBUG BasicResourcePool:422 - decremented pending_acquires: 13
+14:59:18,374 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,374 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 38, unused: 37, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,374 DEBUG BasicResourcePool:422 - decremented pending_acquires: 12
+14:59:18,376 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,376 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 39, unused: 38, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,376 DEBUG BasicResourcePool:422 - decremented pending_acquires: 11
+14:59:18,377 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,378 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 40, unused: 39, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,378 DEBUG BasicResourcePool:422 - decremented pending_acquires: 10
+14:59:18,384 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,384 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 41, unused: 40, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,384 DEBUG BasicResourcePool:422 - decremented pending_acquires: 9
+14:59:18,384 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,384 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 42, unused: 41, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,384 DEBUG BasicResourcePool:422 - decremented pending_acquires: 8
+14:59:18,385 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,386 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 43, unused: 42, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,386 DEBUG BasicResourcePool:422 - decremented pending_acquires: 7
+14:59:18,391 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,391 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 44, unused: 43, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,391 DEBUG BasicResourcePool:422 - decremented pending_acquires: 6
+14:59:18,392 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,392 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 45, unused: 44, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,392 DEBUG BasicResourcePool:422 - decremented pending_acquires: 5
+14:59:18,392 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,393 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 46, unused: 45, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,393 DEBUG BasicResourcePool:422 - decremented pending_acquires: 4
+14:59:18,397 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,397 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 47, unused: 46, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,397 DEBUG BasicResourcePool:422 - decremented pending_acquires: 3
+14:59:18,400 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,401 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,401 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 48, unused: 47, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,401 DEBUG BasicResourcePool:422 - decremented pending_acquires: 2
+14:59:18,401 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 49, unused: 48, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,401 DEBUG BasicResourcePool:422 - decremented pending_acquires: 1
+14:59:18,404 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@23e5cd49.acquireResource() returning. 
+14:59:18,404 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 50, unused: 50, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+14:59:18,404 DEBUG BasicResourcePool:422 - decremented pending_acquires: 0
+15:00:15,208 DEBUG SqlSessionUtils:46 - Creating a new SqlSession
+15:00:15,209 DEBUG SqlSessionUtils:46 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fc149f0] was not registered for synchronization because synchronization is not active
+15:00:15,212 DEBUG DataSourceUtils:110 - Fetching JDBC Connection from DataSource
+15:00:15,212 DEBUG DynamicDataSource:70 - jdbcUrl:jdbc:mysql://localhost:3306/ymadvert?useUnicode=true&amp;characterEncoding=UTF-8
+15:00:15,213 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 50, unused: 49, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+15:00:15,214 DEBUG SpringManagedTransaction:46 - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5443f614] will not be managed by Spring
+15:00:15,214 DEBUG saveSdkInit:46 - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5443f614]
+15:00:15,214 DEBUG saveSdkInit:46 - ==>  Preparing: INSERT INTO sdk_user(channelKey,scKey,imei,sdkVersion,phoneModel,osVersion,imsi,network,operator, softPackageName,softVersion,root,mac,phoneTotalMemory,phoneAvailableSize, sdcardAvailableSize,ramTotalMemory,ramAvailableSize,sdcardTotalMemory, appListLength,appList,firmwareVersion,phoneUdid,resolution,createTime, phoneBrand,ifSystem,sdcardState,registTime,city,province) values (?,?,?,?,?, ?,?,?,?, ?,?,?,?, ?,?,?, ?,?,?, ?,?,?,?,?,now(), ?,?,?,?,?,? ) 
+15:00:15,218 DEBUG saveSdkInit:46 - ==> Parameters: null, null, null, null, null, null, null, null, 1(String), null, null, 0(Integer), null, 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), tete(String), null, null, null, null, 0(Integer), 0(Integer), 2017-01-31(String), 深圳(String), 广东(String)
+15:00:15,362 DEBUG SqlSessionUtils:46 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fc149f0]
+15:00:15,363 DEBUG DataSourceUtils:327 - Returning JDBC Connection to DataSource
+15:00:15,363 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 50, unused: 49, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+15:00:17,967 DEBUG BasicResourcePool:1962 - Refurbishing idle resources - Wed Mar 15 15:00:17 CST 2017 [com.mchange.v2.resourcepool.BasicResourcePool@7b399c43]
+15:00:17,970 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@31ca4eba] on IDLE CHECK.
+15:00:17,970 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 50, unused: 50, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+15:00:17,970 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@17e7e12a] on IDLE CHECK.
+15:00:17,970 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901] on IDLE CHECK.
+15:00:17,984 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@17e7e12a] on IDLE CHECK has SUCCEEDED.
+15:00:17,984 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901] on IDLE CHECK has SUCCEEDED.
+15:00:17,984 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@31ca4eba] on IDLE CHECK has SUCCEEDED.
+15:00:17,985 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5acc10b9] on IDLE CHECK.
+15:00:17,985 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1a3fc172] on IDLE CHECK.
+15:00:17,984 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7c8f9f24] on IDLE CHECK.
+15:00:17,992 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5acc10b9] on IDLE CHECK has SUCCEEDED.
+15:00:17,992 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7c8f9f24] on IDLE CHECK has SUCCEEDED.
+15:00:17,993 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6e83dbd3] on IDLE CHECK.
+15:00:17,993 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1a3fc172] on IDLE CHECK has SUCCEEDED.
+15:00:17,994 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@58c63d6] on IDLE CHECK.
+15:00:17,993 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@45e40a8e] on IDLE CHECK.
+15:00:17,997 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6e83dbd3] on IDLE CHECK has SUCCEEDED.
+15:00:17,997 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1fb7bc04] on IDLE CHECK.
+15:00:18,000 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@58c63d6] on IDLE CHECK has SUCCEEDED.
+15:00:18,001 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4e4ac575] on IDLE CHECK.
+15:00:18,003 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@45e40a8e] on IDLE CHECK has SUCCEEDED.
+15:00:18,003 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@23823215] on IDLE CHECK.
+15:00:18,003 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1fb7bc04] on IDLE CHECK has SUCCEEDED.
+15:00:18,003 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@76ffea6c] on IDLE CHECK.
+15:00:18,005 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4e4ac575] on IDLE CHECK has SUCCEEDED.
+15:00:18,005 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@23823215] on IDLE CHECK has SUCCEEDED.
+15:00:18,005 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@210b8fd8] on IDLE CHECK.
+15:00:18,005 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@58edef7e] on IDLE CHECK.
+15:00:18,006 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@76ffea6c] on IDLE CHECK has SUCCEEDED.
+15:00:18,007 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@792bd861] on IDLE CHECK.
+15:00:18,008 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@210b8fd8] on IDLE CHECK has SUCCEEDED.
+15:00:18,008 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5f637ef7] on IDLE CHECK.
+15:00:18,010 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5f637ef7] on IDLE CHECK has SUCCEEDED.
+15:00:18,010 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@207268f3] on IDLE CHECK.
+15:00:18,011 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@58edef7e] on IDLE CHECK has SUCCEEDED.
+15:00:18,011 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@58055025] on IDLE CHECK.
+15:00:18,012 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@207268f3] on IDLE CHECK has SUCCEEDED.
+15:00:18,013 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5df162d] on IDLE CHECK.
+15:00:18,012 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@792bd861] on IDLE CHECK has SUCCEEDED.
+15:00:18,014 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@29c62120] on IDLE CHECK.
+15:00:18,014 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@58055025] on IDLE CHECK has SUCCEEDED.
+15:00:18,014 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@398e840c] on IDLE CHECK.
+15:00:18,016 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5df162d] on IDLE CHECK has SUCCEEDED.
+15:00:18,016 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@28506ae0] on IDLE CHECK.
+15:00:18,018 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@29c62120] on IDLE CHECK has SUCCEEDED.
+15:00:18,018 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@398e840c] on IDLE CHECK has SUCCEEDED.
+15:00:18,018 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4776689f] on IDLE CHECK.
+15:00:18,018 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@71e45f26] on IDLE CHECK.
+15:00:18,019 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@28506ae0] on IDLE CHECK has SUCCEEDED.
+15:00:18,019 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@f334d2d] on IDLE CHECK.
+15:00:18,021 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4776689f] on IDLE CHECK has SUCCEEDED.
+15:00:18,021 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@33e62319] on IDLE CHECK.
+15:00:18,021 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@71e45f26] on IDLE CHECK has SUCCEEDED.
+15:00:18,022 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@3b726a73] on IDLE CHECK.
+15:00:18,022 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@f334d2d] on IDLE CHECK has SUCCEEDED.
+15:00:18,023 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6d148eee] on IDLE CHECK.
+15:00:18,024 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@33e62319] on IDLE CHECK has SUCCEEDED.
+15:00:18,024 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7b852bec] on IDLE CHECK.
+15:00:18,025 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@3b726a73] on IDLE CHECK has SUCCEEDED.
+15:00:18,025 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6f289e94] on IDLE CHECK.
+15:00:18,026 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6d148eee] on IDLE CHECK has SUCCEEDED.
+15:00:18,026 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@2b789e3d] on IDLE CHECK.
+15:00:18,026 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7b852bec] on IDLE CHECK has SUCCEEDED.
+15:00:18,026 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@52b79fea] on IDLE CHECK.
+15:00:18,028 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6f289e94] on IDLE CHECK has SUCCEEDED.
+15:00:18,028 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@210d140b] on IDLE CHECK.
+15:00:18,028 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@2b789e3d] on IDLE CHECK has SUCCEEDED.
+15:00:18,028 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7370a6b3] on IDLE CHECK.
+15:00:18,031 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@52b79fea] on IDLE CHECK has SUCCEEDED.
+15:00:18,031 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7370a6b3] on IDLE CHECK has SUCCEEDED.
+15:00:18,032 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6a631a69] on IDLE CHECK.
+15:00:18,031 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@629a10f] on IDLE CHECK.
+15:00:18,032 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@210d140b] on IDLE CHECK has SUCCEEDED.
+15:00:18,032 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5f22ed8b] on IDLE CHECK.
+15:00:18,034 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6a631a69] on IDLE CHECK has SUCCEEDED.
+15:00:18,034 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5f22ed8b] on IDLE CHECK has SUCCEEDED.
+15:00:18,034 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@629a10f] on IDLE CHECK has SUCCEEDED.
+15:00:18,034 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@2846b80b] on IDLE CHECK.
+15:00:18,034 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7fbcf81e] on IDLE CHECK.
+15:00:18,034 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7558f4e3] on IDLE CHECK.
+15:00:18,036 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7fbcf81e] on IDLE CHECK has SUCCEEDED.
+15:00:18,036 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7558f4e3] on IDLE CHECK has SUCCEEDED.
+15:00:18,036 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@709a1bb4] on IDLE CHECK.
+15:00:18,036 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@2846b80b] on IDLE CHECK has SUCCEEDED.
+15:00:18,036 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@55875fae] on IDLE CHECK.
+15:00:18,036 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@11e36125] on IDLE CHECK.
+15:00:18,037 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@709a1bb4] on IDLE CHECK has SUCCEEDED.
+15:00:18,038 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@228e6ac4] on IDLE CHECK.
+15:00:18,038 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@55875fae] on IDLE CHECK has SUCCEEDED.
+15:00:18,038 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@11e36125] on IDLE CHECK has SUCCEEDED.
+15:00:18,038 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7d3864a] on IDLE CHECK.
+15:00:18,038 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@3f854c4a] on IDLE CHECK.
+15:00:18,039 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@228e6ac4] on IDLE CHECK has SUCCEEDED.
+15:00:18,039 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5177d377] on IDLE CHECK.
+15:00:18,039 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@3f854c4a] on IDLE CHECK has SUCCEEDED.
+15:00:18,039 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@cfbc1ed] on IDLE CHECK.
+15:00:18,040 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7d3864a] on IDLE CHECK has SUCCEEDED.
+15:00:18,040 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1959e2cf] on IDLE CHECK.
+15:00:18,040 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5177d377] on IDLE CHECK has SUCCEEDED.
+15:00:18,041 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@cfbc1ed] on IDLE CHECK has SUCCEEDED.
+15:00:18,041 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1959e2cf] on IDLE CHECK has SUCCEEDED.
+15:00:27,460 DEBUG SqlSessionUtils:46 - Creating a new SqlSession
+15:00:27,460 DEBUG SqlSessionUtils:46 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12006d5f] was not registered for synchronization because synchronization is not active
+15:00:27,460 DEBUG DataSourceUtils:110 - Fetching JDBC Connection from DataSource
+15:00:27,461 DEBUG DynamicDataSource:70 - jdbcUrl:jdbc:mysql://localhost:3306/ymadvert?useUnicode=true&amp;characterEncoding=UTF-8
+15:00:27,461 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 50, unused: 49, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+15:00:27,461 DEBUG SpringManagedTransaction:46 - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3312982b] will not be managed by Spring
+15:00:27,461 DEBUG saveSdkInit:46 - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3312982b]
+15:00:27,461 DEBUG saveSdkInit:46 - ==>  Preparing: INSERT INTO sdk_user(channelKey,scKey,imei,sdkVersion,phoneModel,osVersion,imsi,network,operator, softPackageName,softVersion,root,mac,phoneTotalMemory,phoneAvailableSize, sdcardAvailableSize,ramTotalMemory,ramAvailableSize,sdcardTotalMemory, appListLength,appList,firmwareVersion,phoneUdid,resolution,createTime, phoneBrand,ifSystem,sdcardState,registTime,city,province) values (?,?,?,?,?, ?,?,?,?, ?,?,?,?, ?,?,?, ?,?,?, ?,?,?,?,?,now(), ?,?,?,?,?,? ) 
+15:00:27,462 DEBUG saveSdkInit:46 - ==> Parameters: null, null, null, null, null, null, null, null, 1(String), null, null, 0(Integer), null, 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), tete(String), null, null, null, null, 0(Integer), 0(Integer), 2017-01-31(String), 深圳(String), 广东(String)
+15:00:27,503 DEBUG SqlSessionUtils:46 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12006d5f]
+15:00:27,503 DEBUG DataSourceUtils:327 - Returning JDBC Connection to DataSource
+15:00:27,504 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 50, unused: 49, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+15:01:17,967 DEBUG BasicResourcePool:1962 - Refurbishing idle resources - Wed Mar 15 15:01:17 CST 2017 [com.mchange.v2.resourcepool.BasicResourcePool@7b399c43]
+15:01:17,967 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@31ca4eba] on IDLE CHECK.
+15:01:17,968 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901] on IDLE CHECK.
+15:01:17,968 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@17e7e12a] on IDLE CHECK.
+15:01:17,967 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@7b399c43 [managed: 50, unused: 50, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901)
+15:01:17,973 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@31ca4eba] on IDLE CHECK has SUCCEEDED.
+15:01:17,973 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7c8f9f24] on IDLE CHECK.
+15:01:17,974 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@2d0d901] on IDLE CHECK has SUCCEEDED.
+15:01:17,974 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5acc10b9] on IDLE CHECK.
+15:01:17,973 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@17e7e12a] on IDLE CHECK has SUCCEEDED.
+15:01:17,974 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1a3fc172] on IDLE CHECK.
+15:01:17,975 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7c8f9f24] on IDLE CHECK has SUCCEEDED.
+15:01:17,975 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6e83dbd3] on IDLE CHECK.
+15:01:17,976 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5acc10b9] on IDLE CHECK has SUCCEEDED.
+15:01:17,976 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@45e40a8e] on IDLE CHECK.
+15:01:17,977 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6e83dbd3] on IDLE CHECK has SUCCEEDED.
+15:01:17,977 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@58c63d6] on IDLE CHECK.
+15:01:17,978 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1a3fc172] on IDLE CHECK has SUCCEEDED.
+15:01:17,978 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1fb7bc04] on IDLE CHECK.
+15:01:17,979 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@45e40a8e] on IDLE CHECK has SUCCEEDED.
+15:01:17,979 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4e4ac575] on IDLE CHECK.
+15:01:17,980 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@58c63d6] on IDLE CHECK has SUCCEEDED.
+15:01:17,980 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@23823215] on IDLE CHECK.
+15:01:17,980 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1fb7bc04] on IDLE CHECK has SUCCEEDED.
+15:01:17,980 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@76ffea6c] on IDLE CHECK.
+15:01:17,981 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4e4ac575] on IDLE CHECK has SUCCEEDED.
+15:01:17,981 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@58edef7e] on IDLE CHECK.
+15:01:17,982 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@23823215] on IDLE CHECK has SUCCEEDED.
+15:01:17,982 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@210b8fd8] on IDLE CHECK.
+15:01:17,983 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@58edef7e] on IDLE CHECK has SUCCEEDED.
+15:01:17,983 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@792bd861] on IDLE CHECK.
+15:01:17,983 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@76ffea6c] on IDLE CHECK has SUCCEEDED.
+15:01:17,984 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5f637ef7] on IDLE CHECK.
+15:01:17,984 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@210b8fd8] on IDLE CHECK has SUCCEEDED.
+15:01:17,984 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@207268f3] on IDLE CHECK.
+15:01:17,986 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@792bd861] on IDLE CHECK has SUCCEEDED.
+15:01:17,987 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@58055025] on IDLE CHECK.
+15:01:17,987 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@207268f3] on IDLE CHECK has SUCCEEDED.
+15:01:17,987 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5df162d] on IDLE CHECK.
+15:01:17,988 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5f637ef7] on IDLE CHECK has SUCCEEDED.
+15:01:17,988 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@29c62120] on IDLE CHECK.
+15:01:17,990 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5df162d] on IDLE CHECK has SUCCEEDED.
+15:01:17,990 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@398e840c] on IDLE CHECK.
+15:01:17,990 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@58055025] on IDLE CHECK has SUCCEEDED.
+15:01:17,991 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@28506ae0] on IDLE CHECK.
+15:01:17,991 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@29c62120] on IDLE CHECK has SUCCEEDED.
+15:01:17,992 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@398e840c] on IDLE CHECK has SUCCEEDED.
+15:01:17,992 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4776689f] on IDLE CHECK.
+15:01:17,992 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@71e45f26] on IDLE CHECK.
+15:01:17,993 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@28506ae0] on IDLE CHECK has SUCCEEDED.
+15:01:17,993 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@f334d2d] on IDLE CHECK.
+15:01:17,994 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@4776689f] on IDLE CHECK has SUCCEEDED.
+15:01:17,994 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@71e45f26] on IDLE CHECK has SUCCEEDED.
+15:01:17,994 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@3b726a73] on IDLE CHECK.
+15:01:17,994 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@33e62319] on IDLE CHECK.
+15:01:17,996 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@f334d2d] on IDLE CHECK has SUCCEEDED.
+15:01:17,996 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6d148eee] on IDLE CHECK.
+15:01:17,997 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@3b726a73] on IDLE CHECK has SUCCEEDED.
+15:01:17,997 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7b852bec] on IDLE CHECK.
+15:01:17,998 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@33e62319] on IDLE CHECK has SUCCEEDED.
+15:01:17,998 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6f289e94] on IDLE CHECK.
+15:01:18,001 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6d148eee] on IDLE CHECK has SUCCEEDED.
+15:01:18,001 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@2b789e3d] on IDLE CHECK.
+15:01:18,002 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7b852bec] on IDLE CHECK has SUCCEEDED.
+15:01:18,002 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@52b79fea] on IDLE CHECK.
+15:01:18,003 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@2b789e3d] on IDLE CHECK has SUCCEEDED.
+15:01:18,004 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@210d140b] on IDLE CHECK.
+15:01:18,004 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6f289e94] on IDLE CHECK has SUCCEEDED.
+15:01:18,004 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7370a6b3] on IDLE CHECK.
+15:01:18,005 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@52b79fea] on IDLE CHECK has SUCCEEDED.
+15:01:18,005 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@629a10f] on IDLE CHECK.
+15:01:18,005 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7370a6b3] on IDLE CHECK has SUCCEEDED.
+15:01:18,005 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6a631a69] on IDLE CHECK.
+15:01:18,006 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@210d140b] on IDLE CHECK has SUCCEEDED.
+15:01:18,007 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5f22ed8b] on IDLE CHECK.
+15:01:18,008 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@6a631a69] on IDLE CHECK has SUCCEEDED.
+15:01:18,008 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7fbcf81e] on IDLE CHECK.
+15:01:18,008 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@629a10f] on IDLE CHECK has SUCCEEDED.
+15:01:18,008 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@2846b80b] on IDLE CHECK.
+15:01:18,009 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5f22ed8b] on IDLE CHECK has SUCCEEDED.
+15:01:18,009 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7558f4e3] on IDLE CHECK.
+15:01:18,009 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7fbcf81e] on IDLE CHECK has SUCCEEDED.
+15:01:18,009 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@11e36125] on IDLE CHECK.
+15:01:18,009 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@2846b80b] on IDLE CHECK has SUCCEEDED.
+15:01:18,009 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@709a1bb4] on IDLE CHECK.
+15:01:18,010 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7558f4e3] on IDLE CHECK has SUCCEEDED.
+15:01:18,010 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@55875fae] on IDLE CHECK.
+15:01:18,010 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@11e36125] on IDLE CHECK has SUCCEEDED.
+15:01:18,011 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@228e6ac4] on IDLE CHECK.
+15:01:18,011 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@709a1bb4] on IDLE CHECK has SUCCEEDED.
+15:01:18,011 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7d3864a] on IDLE CHECK.
+15:01:18,012 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@228e6ac4] on IDLE CHECK has SUCCEEDED.
+15:01:18,012 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@3f854c4a] on IDLE CHECK.
+15:01:18,012 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@55875fae] on IDLE CHECK has SUCCEEDED.
+15:01:18,013 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5177d377] on IDLE CHECK.
+15:01:18,013 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@7d3864a] on IDLE CHECK has SUCCEEDED.
+15:01:18,013 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@cfbc1ed] on IDLE CHECK.
+15:01:18,014 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@3f854c4a] on IDLE CHECK has SUCCEEDED.
+15:01:18,014 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5177d377] on IDLE CHECK has SUCCEEDED.
+15:01:18,014 DEBUG C3P0PooledConnectionPool:315 - Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1959e2cf] on IDLE CHECK.
+15:01:18,015 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@cfbc1ed] on IDLE CHECK has SUCCEEDED.
+15:01:18,016 DEBUG C3P0PooledConnectionPool:319 - Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1959e2cf] on IDLE CHECK has SUCCEEDED.

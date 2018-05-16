@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/aop
+						   http://www.springframework.org/schema/aop/spring-aop.xsd">
+	<context:annotation-config />
+	
+	<aop:aspectj-autoproxy /> 
+	<context:component-scan base-package="com.ymei_inc.ymadvert.*" />
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:properties/redis.properties</value>
+				<value>classpath:properties/server.properties</value>
+				<value>classpath:properties/jdbc.properties</value>
+			</list>
+		</property>
+		<property name="fileEncoding" value="utf-8" />
+	</bean>
+	<bean id="Server" class="org.eclipse.jetty.server.Server"
+		init-method="start" destroy-method="stop">
+		<property name="connectors">
+			<list>
+			<!-- org.eclipse.jetty.server.ServerConnector -->
+				<bean id="Connector" class="org.eclipse.jetty.server.nio.SelectChannelConnector">
+					<property name="port" value="${server.port}" />
+					<property name="maxIdleTime" value="${server.maxIdleTime}" />
+				</bean>
+			</list>
+		</property>
+
+		<property name="handler">
+			<bean id="handlers" class="org.eclipse.jetty.server.handler.HandlerList">
+				<property name="handlers">
+					<list>
+						<bean class="org.eclipse.jetty.servlet.ServletContextHandler"
+							p:contextPath="/">
+							
+							<property name="sessionHandler">
+								<bean class="org.eclipse.jetty.server.session.SessionHandler" />
+							</property>
+							<property name="servletHandler">
+								<bean class="org.eclipse.jetty.servlet.ServletHandler">
+									<!-- 过滤器 -->
+									<property name="filters">
+										<list>
+										<bean class="org.eclipse.jetty.servlet.FilterHolder"
+													p:name="md5Filter">
+												<property name="filter">
+													<bean class="com.ymei_inc.ymadvert.filter.MD5Filter" />
+												</property>
+											</bean>
+										</list>
+									</property>
+									<property name="filterMappings">
+										<list>
+											<bean class="org.eclipse.jetty.servlet.FilterMapping"
+												p:filterName="md5Filter" p:pathSpec="/*" />
+										</list>
+									</property>
+									<!-- servlet -->
+									<property name="servlets">
+										<list>
+
+											<bean class="org.eclipse.jetty.servlet.ServletHolder"
+												p:name="userAction">
+												<property name="servlet">
+													<bean class="com.ymei_inc.ymadvert.servlet.UserActionServlet" />
+												</property>
+											</bean>
+											<bean class="org.eclipse.jetty.servlet.ServletHolder"
+												p:name="getInit">
+												<property name="servlet">
+													<bean class="com.ymei_inc.ymadvert.servlet.ADInitServlet" />
+												</property>
+											</bean>
+											<bean class="org.eclipse.jetty.servlet.ServletHolder"
+												p:name="getJar">
+												<property name="servlet">
+													<bean class="com.ymei_inc.ymadvert.servlet.SdkJarServlet" />
+												</property>
+											</bean>
+											<bean class="org.eclipse.jetty.servlet.ServletHolder"
+												p:name="setting">
+												<property name="servlet">
+													<bean class="com.ymei_inc.ymadvert.servlet.ADSettingServlet" />
+												</property>
+											</bean>
+											<bean class="org.eclipse.jetty.servlet.ServletHolder"
+												p:name="adShow">
+												<property name="servlet">
+													<bean class="com.ymei_inc.ymadvert.servlet.ADShowServlet" />
+												</property>
+											</bean>
+												<bean class="org.eclipse.jetty.servlet.ServletHolder"
+												p:name="test">
+												<property name="servlet">
+													<bean class="com.ymei_inc.ymadvert.servlet.TestServlet" />
+												</property>
+											</bean>
+										</list>
+									</property>
+									<property name="servletMappings">
+										<list>
+											<bean class="org.eclipse.jetty.servlet.ServletMapping"
+												p:servletName="userAction" p:pathSpec="/behavior/*" />
+											<bean class="org.eclipse.jetty.servlet.ServletMapping"
+												p:servletName="getInit" p:pathSpec="/getInit/*" />
+											<bean class="org.eclipse.jetty.servlet.ServletMapping"
+												p:servletName="setting" p:pathSpec="/setting/*" />
+											<bean class="org.eclipse.jetty.servlet.ServletMapping"
+												p:servletName="getJar" p:pathSpec="/getJar/*" />
+											<bean class="org.eclipse.jetty.servlet.ServletMapping"
+												p:servletName="adShow" p:pathSpec="/adShow/*" />
+												<bean class="org.eclipse.jetty.servlet.ServletMapping"
+												p:servletName="test" p:pathSpec="/test/*" />
+										</list>
+									</property>
+								</bean>
+							</property>
+						</bean>
+
+
+						<bean class="org.eclipse.jetty.server.handler.DefaultHandler" />
+					</list>
+				</property>
+			</bean>
+		</property>
+	</bean>
+
+	<import resource="spring-redis.xml" />
+	<import resource="spring-mybatis.xml" />
+	<import resource="spring-servlet.xml" />
+</beans> 

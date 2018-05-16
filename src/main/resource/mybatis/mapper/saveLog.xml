@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+"http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="mybatis.mapper.saveLog">
+	<insert id="saveSdkInit" parameterType="SdkInit"
+		useGeneratedKeys="true">
+		INSERT INTO
+		sdk_user(channelKey,scKey,imei,sdkVersion,phoneModel,osVersion,imsi,network,operator,
+		softPackageName,softVersion,root,mac,phoneTotalMemory,phoneAvailableSize,
+		sdcardAvailableSize,ramTotalMemory,ramAvailableSize,sdcardTotalMemory,
+		appListLength,appList,firmwareVersion,phoneUdid,resolution,createTime,
+		phoneBrand,ifSystem,sdcardState,registTime,city,province)
+		values
+		(#{registDeveloperId},#{registChannelId},#{registPhoneImei},#{registSdkVersion},#{registPhoneModel},
+		#{registAndroidRelease},#{registPhoneImsi},#{registCurrentNetworkType},#{operator},
+		#{registPhoneSoftname},#{registPhoneSoftversion},#{registIfroot},#{registPhoneMac},
+		#{registInerSdcardTotalSize},#{registInerSdcardAvailableSize},#{registExtraSdcardAvailableSize},
+		#{registRamTotalMemory},#{registRamAvailableMemory},#{registExtraSdcardTotalSize},
+		#{appListLength},#{appNames},#{registPhoneFirmwareVersion},#{registPhoneUdid},#{registPhoneResolution},now(),
+		#{registPhoneBrand},#{registIfsystem},#{registSdcardState},#{registTime},#{city},#{province}
+		)
+	</insert>
+	
+	<insert id="saveFeebackClickLog" parameterType="SdkAction"
+		useGeneratedKeys="true">
+		INSERT INTO
+		sdk_feeback_click(scKey,advertKey,advertType,createTime,province,ip,udid,clientTime,sdkversion,network,city)
+		values
+		(#{behaviorChannelId},#{behavior.advId},#{behavior.from},now(),#{province},#{ip},#{behaviorPhoneUdid},#{behavior.time},#{sdkversion},#{network},#{city})
+	</insert>
+	<insert id="saveFeebackPushLog" parameterType="SdkAction"
+		useGeneratedKeys="true">
+		INSERT INTO
+		sdk_feeback_show(scKey,advertKey,advertType,createTime,province,ip,udid,clientTime,sdkversion,network,city)
+		values
+		(#{behaviorChannelId},#{behavior.advId},#{behavior.from},now(),#{province},#{ip},#{behaviorPhoneUdid},#{behavior.time},#{sdkversion},#{network},#{city})
+	</insert>
+	<insert id="saveFeebackInstallLog" parameterType="SdkAction"
+		useGeneratedKeys="true">
+		INSERT INTO
+		sdk_feeback_installed(scKey,advertKey,advertType,createTime,province,ip,udid,clientTime,status,sdkversion,network,city)
+		values
+		(#{behaviorChannelId},#{behavior.advId},#{behavior.from},now(),#{province},#{ip},#{behaviorPhoneUdid},#{behavior.time},#{status},#{sdkversion},#{network},#{city})
+	</insert>
+	<insert id="saveFeebackDownLog" parameterType="SdkAction"
+		useGeneratedKeys="true">
+		INSERT INTO
+		sdk_feeback_download(scKey,advertKey,advertType,createTime,province,ip,udid,clientTime,status,sdkversion,network,city)
+		values
+		(#{behaviorChannelId},#{behavior.advId},#{behavior.from},now(),#{province},#{ip},#{behaviorPhoneUdid},#{behavior.time},#{status},#{sdkversion},#{network},#{city})
+	</insert>
+	<insert id="saveSdkSetting" parameterType="SdkSetting"
+		useGeneratedKeys="true">
+		INSERT INTO
+		sdk_advsetting(scKey,phoneUdid,createTime,province,ip,sdkversion,network,city)
+		values
+		(#{setChannelId},#{setPhoneUdid},now(),#{province},#{ip},#{sdkversion},#{network},#{city})
+	</insert>
+	<insert id="saveSdkUpdate" parameterType="SdkUpdate"
+		useGeneratedKeys="true">
+		INSERT INTO
+		sdk_jarupdate(clientVersion,scKey,udid,status,jarUrl,updateVersion,createTime,province,ip,city)
+		values
+		(#{jarVersionClient},#{jarChannelId},#{jarPhoneUdid},#{status},#{jarUrl},#{updateVersion},now(),#{province},#{ip},#{city})
+	</insert>
+	<insert id="saveSendLog" parameterType="AdvSent"
+		useGeneratedKeys="true">
+		INSERT INTO
+		adv_send_list(
+		scKey,advertKey,advertType,sdkversion,createTime,province,pkgstatus,ip,udid,network,city,callCount,smsCount,callDuration
+		)		
+		values
+		(#{scKey},#{advertKey},#{advertType},#{sdkversion},now(),#{province},#{pkgstatus},#{ip},#{udid},#{network},#{city},#{callCount},#{smsCount},#{callDuration})
+	</insert>
+
+
+
+
+</mapper>

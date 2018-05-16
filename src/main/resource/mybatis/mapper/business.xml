@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+"http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="mybatis.mapper.business">
+
+	<select id="selectByName" resultType="Province">
+		select * from s_province
+		where provinceName like CONCAT('%',#{string},'%' ) limit 1
+	</select>
+	<select id="selectWhiteList" resultType="BlackWhite">
+		select id as id,imei as ip,type as type from s_blackwhitelist
+		where imei = #{ip} and type = 102 limit 1
+	</select>
+	<select id="selectBlackList" resultType="BlackWhite">
+		select id as id,imei as ip,type as type from s_blackwhitelist
+		where imei in (select imei from sdk_user where phoneUdid = #{phoneUdid}) and type = 101 limit 1
+	</select>
+	<select id="selectCityByname" resultType="City">
+		select * from s_city
+		where cityName like CONCAT('%',#{cityName},'%' ) limit 1
+	</select>
+	<select id="selectChannelByKey" resultType="Channel">
+		select
+		channelId,accountId,cityId,name,publicKey,privateKey,status from
+		c_channel where publicKey = #{developerKey} limit 1
+	</select>
+
+	<select id="selectSubChannelByKey" resultType="SubChannel">
+		select
+		* from
+		c_subchannel where scKey = #{channelKey} limit 1
+	</select>
+
+	<select id="selectProductByKey" resultType="Product">
+		select
+		* from
+		c_product
+		where productKey = #{productKey} limit 1
+	</select>
+	<select id="selectProductById" resultType="Product">
+		select
+		* from c_product
+		where productId = #{productId} limit 1
+	</select>
+
+	<select id="selectSettingByChannelId" resultType="RenderSetting">
+		select
+		totalSwitch as setTotalSwitch,
+	notifSwitch as setNotifSwitch,
+	silentSwitch as setSilentSwitch,
+	popwinSwitch as setPopwinSwitch,
+	fullwinSwitch as setFullwinSwitch,
+	bannerSwitch as setBannerSwitch,
+	silentTime as setSilentTime,
+	notifInterval as setNotifInterval,
+	notifDailyLimit as setNotifDailyLimit,
+	silentDailyLimit  as setSilentDailyLimit,
+	popwinInterval as setPopwinInterval,
+	popwinDailyLimit as setPopwinDailyLimit,
+	fullwinInterval as setFullwinInterval,
+	fullwinDailyLimit as setFullwinDailyLimit,
+	bannerInterval as setBannerInterval,
+	bannerDailyLimit as setBannerDailyLimit,
+	bannerSwhInterval as setBannerSwhInterval,
+	appDependence as setAppDependence ,
+	isPop as isPop,
+	isShortCut as isShortCut
+	from
+		c_channelsetting where scId = #{channelId} limit 1
+	</select>
+
+	<select id="selectJarUpdate" resultType="RenderUpdate">
+		SELECT url as
+		jarUrl,version as jarVersionServer ,md5 FROM s_update WHERE version =
+		(SELECT MAX(version) FROM s_update WHERE substring(version,1,1)=#{type} and
+		version>=#{jarVersionClient} and id not in (select updateId from update_channel_limit where scId = #{jarChannelId} and isOpen=1000 ))  limit 1
+	</select>
+
+	<update id="updatePushConnt" >  
+        update a_advertpush set pushcount = pushcount+1 where pushid = #{pushid}
+    </update>  
+
+	<!-- 查询广告 -->
+
+	<select id="selectPopWindowAdv" resultType="PopWindow"
+		parameterType="SdkShow">
+		SELECT
+		a.pushid,a.popwinAdvId,a.popwinAdvTitle,a.popwinAdvContent,a.popwinAdvToType,
+		a.popwinAdvUrl,a.popwinAdvDownloadUrl,a.popwinAdvPushCount,a.popwinAdvRemoveTime,
+		a.popwinAdvPackageName,a.popwinAdvIconUrl,a.popwinAdvAppName,a.popwinAdvImgUrl,
+		a.popwinAdvUninstall,a.popwinAdvUninstallTime,a.popwinAdvActivateCount
+		FROM(
+		SELECT
+		p.pushid,
+		ad.advertKey as popwinAdvId,
+		if(p.orderNum=1,1,p.orderNum-p.pushcount) as orderNum,
+		ad.advertName as popwinAdvTitle,
+		ad.advertText as popwinAdvContent,
+		ad.advType as popwinAdvToType,
+		
+		ad.ddlUrl as popwinAdvUrl,
+		concat(#{fileHost},path.attachmentPath) as popwinAdvDownloadUrl ,
+		ad.mxPush as popwinAdvPushCount,
+		p.pushetime as popwinAdvRemoveTime,
+		
+		ad.packageName as popwinAdvPackageName,
+		concat(#{fileHost},icon.attachmentPath) as popwinAdvIconUrl,
+		ad.appName as popwinAdvAppName,
+		concat(#{fileHost},screen.attachmentPath) as popwinAdvImgUrl,
+		ad.isUninstall as popwinAdvUninstall,
+		
+		ad.uninstallTime as popwinAdvUninstallTime,
+		ad.maxActiveCount as popwinAdvActivateCount
+		FROM
+		a_advertpush p,
+		a_advert
+		ad,a_advertiser adverter,
+		s_attachment path,
+		s_attachment icon,
+		s_attachment screen
+		WHERE
+		p.pushid NOT IN (
+		SELECT
+		pushid
+		FROM
+		advert_channel_limit
+		WHERE
+		scId = #{scId}
+		AND isOpen = 1000
+		)
+		AND p.showtype = 101
+		AND find_in_set(#{isp},p.isp)>0
+		AND
+		find_in_set(#{network},p.network)>0
+		AND ad.`status`=2
+		AND adverter.`status`=2
+		AND p.state = 1001
+		AND #{pushDate}
+		BETWEEN p.pushstime
+		AND p.pushetime
+		AND #{shieldTime} NOT BETWEEN
+		p.shieldStartTime
+		AND p.shieldEndTime
+		AND p.advertId = ad.advertId
+		AND
+		ad.advertPath = path.id
+		AND ad.iconUrl = icon.id
+		ANd ad.screen4Url = screen.id
+		AND adverter.advertiserId = ad.advertiserId
+		<if test="showType != null and showType !='2000' ">
+			and ad.advType = #{showType}
+		</if>
+		ORDER BY p.weight DESC
+		)
+		a where orderNum>0 limit 3
+	</select>
+	<select id="selectPopWindowAdvByCity" resultType="PopWindow"
+		parameterType="SdkShow">
+		SELECT * FROM (
+		SELECT
+		a.pushid,a.popwinAdvId,a.popwinAdvTitle,a.popwinAdvContent,a.popwinAdvToType,
+		a.popwinAdvUrl,a.popwinAdvDownloadUrl,a.popwinAdvPushCount,a.popwinAdvRemoveTime,
+		a.popwinAdvPackageName,a.popwinAdvIconUrl,a.popwinAdvAppName,a.popwinAdvImgUrl,
+		a.popwinAdvUninstall,a.popwinAdvUninstallTime,a.popwinAdvActivateCount
+		FROM(
+		SELECT
+		p.pushid,
+		ad.advertKey as popwinAdvId,
+		if(p.orderNum=1,1,p.orderNum-p.pushcount) as orderNum,
+		ad.advertName as popwinAdvTitle,
+		ad.advertText as popwinAdvContent,
+		ad.advType as popwinAdvToType,
+		
+		ad.ddlUrl as popwinAdvUrl,
+		concat(#{fileHost},path.attachmentPath) as popwinAdvDownloadUrl ,
+		ad.mxPush as popwinAdvPushCount,
+		p.pushetime as popwinAdvRemoveTime,
+		
+		ad.packageName as popwinAdvPackageName,
+		concat(#{fileHost},icon.attachmentPath) as popwinAdvIconUrl,
+		ad.appName as popwinAdvAppName,
+		concat(#{fileHost},screen.attachmentPath) as popwinAdvImgUrl,
+		ad.isUninstall as popwinAdvUninstall,
+		
+		ad.uninstallTime as popwinAdvUninstallTime,
+		ad.maxActiveCount as popwinAdvActivateCount
+		FROM
+		a_advertpush p,
+		a_advert
+		ad,a_advertiser adverter,
+		s_attachment path,
+		s_attachment icon,
+		s_attachment screen
+		WHERE
+		p.pushid NOT IN (
+		SELECT
+		pushid
+		FROM
+		advert_channel_limit
+		WHERE
+		scId = #{scId}
+		AND isOpen = 1000
+		)
+		AND p.showtype = 101
+		AND find_in_set(#{isp},p.isp)>0
+		AND
+		find_in_set(#{network},p.network)>0
+		AND ad.`status`=2
+		AND adverter.`status`=2
+		AND p.state = 1001
+		AND #{pushDate}
+		BETWEEN p.pushstime
+		AND p.pushetime
+		AND #{shieldTime} NOT BETWEEN
+		p.shieldStartTime
+		AND p.shieldEndTime
+		AND p.advertId = ad.advertId
+		AND
+		ad.advertPath = path.id
+		AND ad.iconUrl = icon.id
+		ANd ad.screen4Url = screen.id
+		AND adverter.advertiserId = ad.advertiserId
+		<if test="showType != null and showType !='2000' ">
+			and ad.advType = #{showType}
+		</if>
+		ORDER BY p.weight DESC
+		) a  where a.orderNum>0 ) fin WHERE fin.pushid NOT IN (SELECT pushid FROM advert_city_limit WHERE cityId = #{cityId} AND isOpen=1000) limit 3
+	</select>
+	<select id="selectBannerAdv" resultType="Banner"
+		parameterType="SdkShow">
+		SELECT
+		a.pushid,a.bannerAdvId,a.bannerAdvTitle,a.bannerAdvContent,a.bannerAdvToType,
+		a.bannerAdvUrl,a.bannerAdvDownloadUrl,a.bannerAdvPushCount,a.bannerAdvRemoveTime,
+		a.bannerAdvPackageName,a.bannerAdvIconUrl,a.bannerAdvAppName,a.bannerAdvImgUrl,
+		a.bannerAdvUninstall,a.bannerAdvUninstallTime,a.bannerAdvActivateCount,a.bannerPosition
+		FROM(
+		SELECT
+		p.pushid,
+		ad.advertKey as bannerAdvId,
+		if(p.orderNum=1,1,p.orderNum-p.pushcount) as orderNum,
+		ad.advertName as bannerAdvTitle,
+		ad.advertText as bannerAdvContent,
+		ad.advType as bannerAdvToType,
+		
+		ad.ddlUrl as bannerAdvUrl,
+		concat(#{fileHost},path.attachmentPath) as bannerAdvDownloadUrl ,
+		ad.mxPush as bannerAdvPushCount,
+		p.pushetime as bannerAdvRemoveTime,
+		
+		ad.packageName as bannerAdvPackageName,
+		concat(#{fileHost},icon.attachmentPath) as bannerAdvIconUrl,
+		ad.appName as bannerAdvAppName,
+		concat(#{fileHost},banner.attachmentPath) as bannerAdvImgUrl,
+		ad.isUninstall as bannerAdvUninstall,
+		
+		ad.uninstallTime as bannerAdvUninstallTime,
+		ad.maxActiveCount as bannerAdvActivateCount,
+		p.bannerPosition as bannerPosition
+		FROM
+		a_advertpush p,
+		a_advert ad,a_advertiser adverter,
+		s_attachment path,
+		s_attachment icon,
+		s_attachment banner
+		WHERE
+		p.pushid NOT IN (
+		SELECT
+		pushid
+		FROM
+		advert_channel_limit
+		WHERE
+		scId = #{scId}
+		AND isOpen = 1000
+		)
+		AND p.showtype = 102
+		AND find_in_set(#{isp},p.isp)>0
+		AND
+		find_in_set(#{network},p.network)>0
+		AND ad.`status`=2
+		AND adverter.`status`=2
+		AND p.state = 1001
+		AND #{pushDate}
+		BETWEEN p.pushstime
+		AND p.pushetime
+		AND #{shieldTime} NOT BETWEEN
+		p.shieldStartTime
+		AND p.shieldEndTime
+		AND p.advertId = ad.advertId
+		AND
+		ad.advertPath = path.id
+		AND ad.iconUrl = icon.id
+		ANd ad.bannerUrl = banner.id
+		AND adverter.advertiserId = ad.advertiserId
+		<if test="showType != null and showType !='2000' ">
+			and ad.advType = #{showType}
+		</if>
+		ORDER BY p.weight DESC
+		)
+		a where orderNum>0 limit 3
+	</select>
+	<select id="selectBannerAdvByCity" resultType="Banner"
+		parameterType="SdkShow">
+		SELECT * FROM (
+		SELECT
+		a.pushid,a.bannerAdvId,a.bannerAdvTitle,a.bannerAdvContent,a.bannerAdvToType,
+		a.bannerAdvUrl,a.bannerAdvDownloadUrl,a.bannerAdvPushCount,a.bannerAdvRemoveTime,
+		a.bannerAdvPackageName,a.bannerAdvIconUrl,a.bannerAdvAppName,a.bannerAdvImgUrl,
+		a.bannerAdvUninstall,a.bannerAdvUninstallTime,a.bannerAdvActivateCount,a.bannerPosition
+		FROM(
+		SELECT
+		p.pushid,
+		ad.advertKey as bannerAdvId,
+		if(p.orderNum=1,1,p.orderNum-p.pushcount) as orderNum,
+		ad.advertName as bannerAdvTitle,
+		ad.advertText as bannerAdvContent,
+		ad.advType as bannerAdvToType,
+		
+		ad.ddlUrl as bannerAdvUrl,
+		concat(#{fileHost},path.attachmentPath) as bannerAdvDownloadUrl ,
+		ad.mxPush as bannerAdvPushCount,
+		p.pushetime as bannerAdvRemoveTime,
+		
+		ad.packageName as bannerAdvPackageName,
+		concat(#{fileHost},icon.attachmentPath) as bannerAdvIconUrl,
+		ad.appName as bannerAdvAppName,
+		concat(#{fileHost},banner.attachmentPath) as bannerAdvImgUrl,
+		ad.isUninstall as bannerAdvUninstall,
+		
+		ad.uninstallTime as bannerAdvUninstallTime,
+		ad.maxActiveCount as bannerAdvActivateCount,
+		p.bannerPosition as bannerPosition
+		FROM
+		a_advertpush p,
+		a_advert ad,a_advertiser adverter,
+		s_attachment path,
+		s_attachment icon,
+		s_attachment banner
+		WHERE
+		p.pushid NOT IN (
+		SELECT
+		pushid
+		FROM
+		advert_channel_limit
+		WHERE
+		scId = #{scId}
+		AND isOpen = 1000
+		)
+		AND p.showtype = 102
+		AND find_in_set(#{isp},p.isp)>0
+		AND
+		find_in_set(#{network},p.network)>0
+		AND ad.`status`=2
+		AND adverter.`status`=2
+		AND p.state = 1001
+		AND #{pushDate}
+		BETWEEN p.pushstime
+		AND p.pushetime
+		AND #{shieldTime} NOT BETWEEN
+		p.shieldStartTime
+		AND p.shieldEndTime
+		AND p.advertId = ad.advertId
+		AND
+		ad.advertPath = path.id
+		AND ad.iconUrl = icon.id
+		ANd ad.bannerUrl = banner.id
+		AND adverter.advertiserId = ad.advertiserId
+		<if test="showType != null and showType !='2000' ">
+			and ad.advType = #{showType}
+		</if>
+		ORDER BY p.weight DESC
+		) a  where a.orderNum>0 ) fin WHERE fin.pushid NOT IN (SELECT pushid FROM advert_city_limit WHERE cityId = #{cityId} AND isOpen=1000) limit 3
+	</select>
+	
+	
+	<select id="selectNotificationAdv" resultType="Notification"
+		parameterType="SdkShow">
+	
+		SELECT
+		a.pushid,a.notifAdvActivateCount,a.notifAdvAppName,a.notifAdvContent,a.notifAdvDownloadUrl,a.notifAdvIconUrl,a.notifAdvId,a.notifAdvPackageName,a.notifAdvPushCount,a.notifAdvRemoveTime,a.notifAdvTitle,a.notifAdvToType,a.notifAdvUninstall,a.notifAdvUninstallTime,a.notifAdvUrl
+		FROM(
+		SELECT
+		p.pushid,
+		ad.advertKey as notifAdvId,
+		if(p.orderNum=1,1,p.orderNum-p.pushcount) as orderNum,
+		ad.advertName as notifAdvTitle,
+		ad.advertText as
+		notifAdvContent,
+		ad.advType as notifAdvToType,
+		ad.ddlUrl as notifAdvUrl,
+
+		concat(#{fileHost},path.attachmentPath) as notifAdvDownloadUrl ,
+		ad.mxPush as
+		notifAdvPushCount,
+		p.pushetime as notifAdvRemoveTime,
+		ad.packageName as
+		notifAdvPackageName,
+
+		concat(#{fileHost},icon.attachmentPath) as notifAdvIconUrl,
+		ad.appName as notifAdvAppName,
+		ad.isUninstall as
+		notifAdvUninstall,
+		ad.uninstallTime as notifAdvUninstallTime,
+		ad.maxActiveCount as notifAdvActivateCount
+		FROM
+		a_advertpush p,
+		a_advert ad,a_advertiser adverter,
+		s_attachment path,
+		s_attachment icon
+		WHERE
+		p.pushid NOT IN (
+		SELECT
+		pushid
+		FROM
+		advert_channel_limit
+		WHERE
+		scId = #{scId}
+		AND isOpen = 1000
+		)
+		AND p.showtype = 103
+		AND find_in_set(#{isp},p.isp)>0
+		AND
+		find_in_set(#{network},p.network)>0
+		AND ad.`status`=2
+		AND adverter.`status`=2
+		AND p.state = 1001
+		AND #{pushDate}
+		BETWEEN p.pushstime
+		AND p.pushetime
+		AND #{shieldTime} NOT BETWEEN
+		p.shieldStartTime
+		AND p.shieldEndTime
+		AND p.advertId = ad.advertId
+		AND
+		ad.advertPath = path.id
+		AND ad.iconUrl = icon.id
+		AND adverter.advertiserId = ad.advertiserId
+		<if test="showType != null and showType !='2000' ">
+			and ad.advType = #{showType}
+		</if>
+		ORDER BY p.weight DESC
+		)
+		a where orderNum>0 limit 3
+	</select>
+	
+	<select id="selectNotificationAdvByCity" resultType="Notification"
+		parameterType="SdkShow">
+	SELECT * FROM (
+		SELECT
+		a.pushid,a.notifAdvActivateCount,a.notifAdvAppName,a.notifAdvContent,a.notifAdvDownloadUrl,a.notifAdvIconUrl,a.notifAdvId,a.notifAdvPackageName,a.notifAdvPushCount,a.notifAdvRemoveTime,a.notifAdvTitle,a.notifAdvToType,a.notifAdvUninstall,a.notifAdvUninstallTime,a.notifAdvUrl
+		FROM(
+		SELECT
+		p.pushid ,
+		ad.advertKey as notifAdvId,
+		if(p.orderNum=1,1,p.orderNum-p.pushcount) as orderNum,
+		ad.advertName as notifAdvTitle,
+		ad.advertText as
+		notifAdvContent,
+		ad.advType as notifAdvToType,
+		ad.ddlUrl as notifAdvUrl,
+
+		concat(#{fileHost},path.attachmentPath) as notifAdvDownloadUrl ,
+		ad.mxPush as
+		notifAdvPushCount,
+		p.pushetime as notifAdvRemoveTime,
+		ad.packageName as
+		notifAdvPackageName,
+
+		concat(#{fileHost},icon.attachmentPath) as notifAdvIconUrl,
+		ad.appName as notifAdvAppName,
+		ad.isUninstall as
+		notifAdvUninstall,
+		ad.uninstallTime as notifAdvUninstallTime,
+		ad.maxActiveCount as notifAdvActivateCount
+		FROM
+		a_advertpush p,
+		a_advert
+		ad,a_advertiser adverter,
+		s_attachment path,
+		s_attachment icon
+		WHERE
+		p.pushid NOT IN (
+		SELECT
+		pushid
+		FROM
+		advert_channel_limit
+		WHERE
+		scId = #{scId}
+		AND isOpen = 1000
+		)
+		AND p.showtype = 103
+		AND find_in_set(#{isp},p.isp)>0
+		AND
+		find_in_set(#{network},p.network)>0
+		AND p.state = 1001
+		AND ad.`status`=2
+		AND adverter.`status`=2
+		AND #{pushDate}
+		BETWEEN p.pushstime
+		AND p.pushetime
+		AND #{shieldTime} NOT BETWEEN
+		p.shieldStartTime
+		AND p.shieldEndTime
+		AND p.advertId = ad.advertId
+		AND
+		ad.advertPath = path.id
+		AND ad.iconUrl = icon.id
+		AND adverter.advertiserId = ad.advertiserId
+		<if test="showType != null and showType !='2000' ">
+			and ad.advType = #{showType}
+		</if>
+		ORDER BY p.weight DESC
+		) a  where a.orderNum>0 ) fin WHERE fin.pushid NOT IN (SELECT pushid FROM advert_city_limit WHERE cityId = #{cityId} AND isOpen=1000) limit 3
+	</select>
+	
+	
+	
+	<select id="selectFullWindowAdv" resultType="FullWindow"
+		parameterType="SdkShow">
+		SELECT
+		a.pushid,a.fullwinAdvId,a.fullwinAdvTitle,a.fullwinAdvContent,a.fullwinAdvToType,
+		a.fullwinAdvUrl,a.fullwinAdvDownloadUrl,a.fullwinAdvPushCount,a.fullwinAdvRemoveTime,
+		a.fullwinAdvPackageName,a.fullwinAdvIconUrl,a.fullwinAdvAppName,a.fullwinAdvImgUrl,
+		a.fullwinAdvUninstall,a.fullwinAdvUninstallTime,a.fullwinAdvActivateCount
+		FROM(
+		SELECT
+		p.pushid,
+		ad.advertKey as fullwinAdvId,
+		if(p.orderNum=1,1,p.orderNum-p.pushcount) as orderNum,
+		ad.advertName as fullwinAdvTitle,
+		ad.advertText as fullwinAdvContent,
+		ad.advType as fullwinAdvToType,
+		
+		ad.ddlUrl as fullwinAdvUrl,
+		concat(#{fileHost},path.attachmentPath) as fullwinAdvDownloadUrl ,
+		ad.mxPush as fullwinAdvPushCount,
+		p.pushetime as fullwinAdvRemoveTime,
+		
+		ad.packageName as fullwinAdvPackageName,
+		concat(#{fileHost},icon.attachmentPath) as fullwinAdvIconUrl,
+		ad.appName as fullwinAdvAppName,
+		concat(#{fileHost},screen.attachmentPath) as fullwinAdvImgUrl,
+		ad.isUninstall as fullwinAdvUninstall,
+		
+		ad.uninstallTime as fullwinAdvUninstallTime,
+		ad.maxActiveCount as fullwinAdvActivateCount
+		FROM
+		a_advertpush p,
+		a_advert
+		ad,a_advertiser adverter,
+		s_attachment path,
+		s_attachment icon,
+		s_attachment screen
+		WHERE
+		p.pushid NOT IN (
+		SELECT
+		pushid
+		FROM
+		advert_channel_limit
+		WHERE
+		scId = #{scId}
+		AND isOpen = 1000
+		)
+		AND p.showtype = 104
+		AND find_in_set(#{isp},p.isp)>0
+		AND
+		find_in_set(#{network},p.network)>0
+		AND p.state = 1001
+		AND ad.`status`=2
+		AND adverter.`status`=2
+		AND #{pushDate}
+		BETWEEN p.pushstime
+		AND p.pushetime
+		AND #{shieldTime} NOT BETWEEN
+		p.shieldStartTime
+		AND p.shieldEndTime
+		AND p.advertId = ad.advertId
+		AND
+		ad.advertPath = path.id
+		AND ad.iconUrl = icon.id
+		ANd ad.screen1Url = screen.id
+		AND adverter.advertiserId = ad.advertiserId
+		<if test="showType != null and showType !='2000' ">
+			and ad.advType = #{showType}
+		</if>
+		
+		ORDER BY p.weight DESC
+		)
+		a where orderNum>0 limit 3
+	</select>
+	<select id="selectFullWindowAdvByCity" resultType="FullWindow"
+		parameterType="SdkShow">
+		SELECT * FROM (
+		SELECT
+		a.pushid,a.fullwinAdvId,a.fullwinAdvTitle,a.fullwinAdvContent,a.fullwinAdvToType,
+		a.fullwinAdvUrl,a.fullwinAdvDownloadUrl,a.fullwinAdvPushCount,a.fullwinAdvRemoveTime,
+		a.fullwinAdvPackageName,a.fullwinAdvIconUrl,a.fullwinAdvAppName,a.fullwinAdvImgUrl,
+		a.fullwinAdvUninstall,a.fullwinAdvUninstallTime,a.fullwinAdvActivateCount
+		FROM(
+		SELECT
+		p.pushid,
+		ad.advertKey as fullwinAdvId,
+		if(p.orderNum=1,1,p.orderNum-p.pushcount) as orderNum,
+		ad.advertName as fullwinAdvTitle,
+		ad.advertText as fullwinAdvContent,
+		ad.advType as fullwinAdvToType,
+		
+		ad.ddlUrl as fullwinAdvUrl,
+		concat(#{fileHost},path.attachmentPath) as fullwinAdvDownloadUrl ,
+		ad.mxPush as fullwinAdvPushCount,
+		p.pushetime as fullwinAdvRemoveTime,
+		
+		ad.packageName as fullwinAdvPackageName,
+		concat(#{fileHost},icon.attachmentPath) as fullwinAdvIconUrl,
+		ad.appName as fullwinAdvAppName,
+		concat(#{fileHost},screen.attachmentPath) as fullwinAdvImgUrl,
+		ad.isUninstall as fullwinAdvUninstall,
+		
+		ad.uninstallTime as fullwinAdvUninstallTime,
+		ad.maxActiveCount as fullwinAdvActivateCount
+		FROM
+		a_advertpush p,
+		a_advert
+		ad,a_advertiser adverter,
+		s_attachment path,
+		s_attachment icon,
+		s_attachment screen
+		WHERE
+		p.pushid NOT IN (
+		SELECT
+		pushid
+		FROM
+		advert_channel_limit
+		WHERE
+		scId = #{scId}
+		AND isOpen = 1000
+		)
+		AND p.showtype = 104
+		AND find_in_set(#{isp},p.isp)>0
+		AND
+		find_in_set(#{network},p.network)>0
+		AND p.state = 1001
+		AND ad.`status`=2
+		AND adverter.`status`=2
+		AND #{pushDate}
+		BETWEEN p.pushstime
+		AND p.pushetime
+		AND #{shieldTime} NOT BETWEEN
+		p.shieldStartTime
+		AND p.shieldEndTime
+		AND p.advertId = ad.advertId
+		AND
+		ad.advertPath = path.id
+		AND ad.iconUrl = icon.id
+		ANd ad.screen1Url = screen.id
+		AND adverter.advertiserId = ad.advertiserId
+		<if test="showType != null and showType !='2000' ">
+			and ad.advType = #{showType}
+		</if>
+		ORDER BY p.weight DESC
+		) a  where a.orderNum>0 ) fin WHERE fin.pushid NOT IN (SELECT pushid FROM advert_city_limit WHERE cityId = #{cityId} AND isOpen=1000) limit 3
+	</select>
+	
+	
+	<select id="selectSilentAdv" resultType="Silent"
+		parameterType="SdkShow">
+		SELECT
+		a.pushid,a.silentAdvId,a.silentAdvTitle,a.silentAdvContent,
+		a.silentAdvDownloadUrl,a.silentAdvPushCount,a.silentAdvRemoveTime,
+		a.silentAdvPackageName,a.silentAdvIconUrl,a.silentAdvAppName,
+		a.silentAdvUninstall,a.silentAdvUninstallTime,a.silentAdvActivateCount,a.silentAdvShowWindow
+		FROM(
+		SELECT
+		p.pushid,
+		ad.advertKey as silentAdvId,
+		if(p.orderNum=1,1,p.orderNum-p.pushcount) as orderNum,
+		ad.advertName as silentAdvTitle,
+		ad.advertText as silentAdvContent,
+		
+		
+		concat(#{fileHost},path.attachmentPath) as silentAdvDownloadUrl ,
+		ad.mxPush as silentAdvPushCount,
+		p.pushetime as silentAdvRemoveTime,
+		
+		ad.packageName as silentAdvPackageName,
+		concat(#{fileHost},icon.attachmentPath) as silentAdvIconUrl,
+		ad.appName as silentAdvAppName,
+		ad.isUninstall as silentAdvUninstall,
+		
+		ad.uninstallTime as silentAdvUninstallTime,
+		ad.maxActiveCount as silentAdvActivateCount,
+		p.showWindow as silentAdvShowWindow
+		FROM
+		a_advertpush p,
+		a_advert ad,a_advertiser adverter,
+		s_attachment path,
+		s_attachment icon
+		WHERE
+		p.pushid NOT IN (
+		SELECT
+		pushid
+		FROM
+		advert_channel_limit
+		WHERE
+		scId = #{scId}
+		AND isOpen = 1000
+		)
+		AND p.showtype = 105
+		AND find_in_set(#{isp},p.isp)>0
+		AND
+		find_in_set(#{network},p.network)>0
+		AND ad.`status`=2
+		AND adverter.`status`=2
+		AND p.state = 1001
+		AND #{pushDate}
+		BETWEEN p.pushstime
+		AND p.pushetime
+		AND #{shieldTime} NOT BETWEEN
+		p.shieldStartTime
+		AND p.shieldEndTime
+		AND p.advertId = ad.advertId
+		AND
+		ad.advertPath = path.id
+		AND ad.iconUrl = icon.id
+		AND adverter.advertiserId = ad.advertiserId
+		<if test="showType != null and showType !='2000' ">
+			and ad.advType = #{showType}
+		</if>
+		ORDER BY p.weight DESC
+		)
+		a where orderNum>0 limit 3
+	</select>
+	<select id="selectSilentAdvByCity" resultType="Silent"
+		parameterType="SdkShow">
+		SELECT * FROM (
+		SELECT
+		a.pushid,a.silentAdvId,a.silentAdvTitle,a.silentAdvContent,
+		a.silentAdvDownloadUrl,a.silentAdvPushCount,a.silentAdvRemoveTime,
+		a.silentAdvPackageName,a.silentAdvIconUrl,a.silentAdvAppName,
+		a.silentAdvUninstall,a.silentAdvUninstallTime,a.silentAdvActivateCount,a.silentAdvShowWindow
+		FROM(
+		SELECT
+		p.pushid,
+		ad.advertKey as silentAdvId,
+		if(p.orderNum=1,1,p.orderNum-p.pushcount) as orderNum,
+		ad.advertName as silentAdvTitle,
+		ad.advertText as silentAdvContent,
+		
+		
+		concat(#{fileHost},path.attachmentPath) as silentAdvDownloadUrl ,
+		ad.mxPush as silentAdvPushCount,
+		p.pushetime as silentAdvRemoveTime,
+		
+		ad.packageName as silentAdvPackageName,
+		concat(#{fileHost},icon.attachmentPath) as silentAdvIconUrl,
+		ad.appName as silentAdvAppName,
+		ad.isUninstall as silentAdvUninstall,
+		
+		ad.uninstallTime as silentAdvUninstallTime,
+		ad.maxActiveCount as silentAdvActivateCount,
+		p.showWindow as silentAdvShowWindow
+		FROM
+		a_advertpush p,
+		a_advert ad,a_advertiser adverter,
+		s_attachment path,
+		s_attachment icon
+		WHERE
+		p.pushid NOT IN (
+		SELECT
+		pushid
+		FROM
+		advert_channel_limit
+		WHERE
+		scId = #{scId}
+		AND isOpen = 1000
+		)
+		AND p.showtype = 105
+		AND find_in_set(#{isp},p.isp)>0
+		AND
+		find_in_set(#{network},p.network)>0
+		AND ad.`status`=2
+		AND adverter.`status`=2
+		AND p.state = 1001
+		AND #{pushDate}
+		BETWEEN p.pushstime
+		AND p.pushetime
+		AND #{shieldTime} NOT BETWEEN
+		p.shieldStartTime
+		AND p.shieldEndTime
+		AND p.advertId = ad.advertId
+		AND
+		ad.advertPath = path.id
+		AND ad.iconUrl = icon.id
+		AND adverter.advertiserId = ad.advertiserId
+		<if test="showType != null and showType !='2000' ">
+			and ad.advType = #{showType}
+		</if>
+		ORDER BY p.weight DESC
+		) a  where a.orderNum>0 ) fin WHERE fin.pushid NOT IN (SELECT pushid FROM advert_city_limit WHERE cityId = #{cityId} AND isOpen=1000) limit 3
+	</select>
+</mapper>

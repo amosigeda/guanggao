@@ -1,0 +1,646 @@
+10:21:08,952 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+10:21:08,956 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+10:21:08,956 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+10:21:08,959  INFO ClassPathXmlApplicationContext:513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@dcf3e99: startup date [Mon Mar 13 10:21:08 CST 2017]; root of context hierarchy
+10:21:08,979 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+10:21:08,980 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+10:21:08,980 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+10:21:08,987  INFO XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [config/spring-core.xml]
+10:21:09,014 DEBUG DefaultDocumentLoader:73 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+10:21:09,074 DEBUG PluggableSchemaResolver:141 - Loading schema mappings from [META-INF/spring.schemas]
+10:21:09,083 DEBUG PluggableSchemaResolver:147 - Loaded schema mappings: {http://mybatis.org/schema/mybatis-spring-1.2.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://mybatis.org/schema/mybatis-spring.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+10:21:09,085 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.0.xsd
+10:21:09,116 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/context/spring-context.xsd] in classpath: org/springframework/context/config/spring-context-4.0.xsd
+10:21:09,121 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.0.xsd
+10:21:09,127 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/aop/spring-aop.xsd] in classpath: org/springframework/aop/config/spring-aop-4.0.xsd
+10:21:09,139 DEBUG DefaultBeanDefinitionDocumentReader:108 - Loading bean definitions
+10:21:09,152 DEBUG DefaultNamespaceHandlerResolver:157 - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://mybatis.org/schema/mybatis-spring=org.mybatis.spring.config.NamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+10:21:09,185 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+10:21:09,185 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+10:21:09,186 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+10:21:09,193 DEBUG PathMatchingResourcePatternResolver:553 - Looking for matching resources in directory tree [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert]
+10:21:09,194 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+10:21:09,195 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\base] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+10:21:09,195 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\dao] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+10:21:09,196 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\dao\impl] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+10:21:09,196 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\filter] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+10:21:09,197 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\ip] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+10:21:09,197 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+10:21:09,198 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+10:21:09,199 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\redis] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+10:21:09,199 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\service] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+10:21:09,199 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\servlet] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+10:21:09,200 DEBUG PathMatchingResourcePatternResolver:615 - Searching directory [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util] for files matching pattern [D:/myeclipseProject/guanggao/target/classes/com/ymei_inc/ymadvert/*/**/*.class]
+10:21:09,202 DEBUG PathMatchingResourcePatternResolver:354 - Resolved location pattern [classpath*:com/ymei_inc/ymadvert/*/**/*.class] to resources [file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\base\BaseDaoImpl.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\base\IBaseDao.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\dao\IBusinessDao.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\dao\impl\BusinessDaoImpl.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\dao\impl\SaveLogDaoImpl.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\dao\ISaveLogDao.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\filter\MD5Filter.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\ip\IPEntry.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\ip\IPSeeker$IPLocation.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\ip\IPSeeker.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\ip\Utils.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\AdvSent.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\Application.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\Behavior.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\BlackWhite.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\Channel.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\City.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\Constant.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\Product.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\Province.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render\Banner.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render\FullWindow.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render\Notification.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render\PopWindow.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render\RenderAction.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render\RenderInit.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render\RenderSetting.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render\RenderShow.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render\RenderUpdate.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\render\Silent.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\SdkAction.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\SdkInit.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\SdkSetting.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\SdkShow.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\SdkUpdate.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\model\SubChannel.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\redis\BasicRedisSupport.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\redis\LimitCache.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\redis\RedisClient.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\servlet\ADInitServlet.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\servlet\ADSettingServlet.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\servlet\ADShowServlet.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\servlet\SdkJarServlet.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\servlet\TestServlet.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\servlet\UserActionServlet.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\CommonUtil$1.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\CommonUtil.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\Des.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\HttpsUtil$TrustAnyHostnameVerifier.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\HttpsUtil$TrustAnyTrustManager.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\HttpsUtil.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\ImsiUtil.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\MakeOrderId.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\MD5.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\SignUtils.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\StreamStringUtil.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\Util$SSLSocketFactoryEx$1.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\Util$SSLSocketFactoryEx.class], file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\util\Util.class]]
+10:21:09,217 DEBUG ClassPathBeanDefinitionScanner:284 - Identified candidate component class: file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\dao\impl\BusinessDaoImpl.class]
+10:21:09,217 DEBUG ClassPathBeanDefinitionScanner:284 - Identified candidate component class: file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\dao\impl\SaveLogDaoImpl.class]
+10:21:09,223 DEBUG ClassPathBeanDefinitionScanner:284 - Identified candidate component class: file [D:\myeclipseProject\guanggao\target\classes\com\ymei_inc\ymadvert\redis\LimitCache.class]
+10:21:09,232 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0]
+10:21:09,233 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.server.session.SessionHandler#76f2b07d]
+10:21:09,234 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [com.ymei_inc.ymadvert.filter.MD5Filter#6ee52dcd]
+10:21:09,234 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.FilterHolder#2781e022]
+10:21:09,235 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.FilterMapping#5faeada1]
+10:21:09,236 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [com.ymei_inc.ymadvert.servlet.UserActionServlet#ea1a8d5]
+10:21:09,236 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletHolder#2bbf4b8b]
+10:21:09,237 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [com.ymei_inc.ymadvert.servlet.ADInitServlet#33c7e1bb]
+10:21:09,237 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletHolder#52feb982]
+10:21:09,237 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [com.ymei_inc.ymadvert.servlet.SdkJarServlet#76b0bfab]
+10:21:09,238 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletHolder#3043fe0e]
+10:21:09,238 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [com.ymei_inc.ymadvert.servlet.ADSettingServlet#bd8db5a]
+10:21:09,238 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletHolder#80503]
+10:21:09,239 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [com.ymei_inc.ymadvert.servlet.ADShowServlet#69a3d1d]
+10:21:09,239 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletHolder#480bdb19]
+10:21:09,240 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [com.ymei_inc.ymadvert.servlet.TestServlet#7d70d1b1]
+10:21:09,240 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletHolder#3cb1ffe6]
+10:21:09,240 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletMapping#467aecef]
+10:21:09,241 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletMapping#7e2d773b]
+10:21:09,241 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletMapping#307f6b8c]
+10:21:09,241 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletMapping#6f195bc3]
+10:21:09,242 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletMapping#1a8a8f7c]
+10:21:09,242 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletMapping#631330c]
+10:21:09,242 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletHandler#c46bcd4]
+10:21:09,242 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.servlet.ServletContextHandler#3d921e20]
+10:21:09,243 DEBUG BeanDefinitionParserDelegate:495 - Neither XML 'id' nor 'name' specified - using generated bean name [org.eclipse.jetty.server.handler.DefaultHandler#fad74ee]
+10:21:09,243  INFO XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [config/spring-redis.xml]
+10:21:09,248 DEBUG DefaultDocumentLoader:73 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+10:21:09,249 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-2.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-2.0.xsd
+10:21:09,259 DEBUG DefaultBeanDefinitionDocumentReader:108 - Loading bean definitions
+10:21:09,261 DEBUG DefaultBeanDefinitionDocumentReader:267 - Imported 3 bean definitions from relative location [spring-redis.xml]
+10:21:09,262  INFO XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [config/spring-mybatis.xml]
+10:21:09,273 DEBUG DefaultDocumentLoader:73 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+10:21:09,274 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+10:21:09,285 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/tx/spring-tx-3.0.xsd] in classpath: org/springframework/transaction/config/spring-tx-3.0.xsd
+10:21:09,290 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+10:21:09,294 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/aop/spring-aop-3.0.xsd] in classpath: org/springframework/aop/config/spring-aop-3.0.xsd
+10:21:09,297 DEBUG DefaultBeanDefinitionDocumentReader:108 - Loading bean definitions
+10:21:09,345 DEBUG DefaultBeanDefinitionDocumentReader:267 - Imported 13 bean definitions from relative location [spring-mybatis.xml]
+10:21:09,345  INFO XmlBeanDefinitionReader:316 - Loading XML bean definitions from class path resource [config/spring-servlet.xml]
+10:21:09,346 DEBUG DefaultDocumentLoader:73 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+10:21:09,347 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-2.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-2.0.xsd
+10:21:09,354 DEBUG DefaultBeanDefinitionDocumentReader:108 - Loading bean definitions
+10:21:09,355 DEBUG DefaultBeanDefinitionDocumentReader:267 - Imported 0 bean definitions from relative location [spring-servlet.xml]
+10:21:09,355 DEBUG XmlBeanDefinitionReader:223 - Loaded 26 bean definitions from location pattern [config/spring-core.xml]
+10:21:09,356 DEBUG ClassPathXmlApplicationContext:543 - Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@dcf3e99: org.springframework.beans.factory.support.DefaultListableBeanFactory@47db50c5: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,businessDao,saveLogDao,limitCache,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,Server,jedisPoolConfig,jedisPool,redisClient,master,slave,dataSource,sqlSessionFactory,sqlSession,dynamicSqlSession,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdvice,allManagerMethod,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0]; root of factory hierarchy
+10:21:09,448 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+10:21:09,448 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+10:21:09,455 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+10:21:09,457 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+10:21:09,488 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+10:21:09,488 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+10:21:09,489 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0' to allow for resolving potential circular references
+10:21:09,510 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+10:21:09,511  INFO PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [properties/redis.properties]
+10:21:09,511  INFO PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [properties/server.properties]
+10:21:09,519  INFO PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [properties/jdbc.properties]
+10:21:09,544 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+10:21:09,545 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+10:21:09,545 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+10:21:09,545 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+10:21:09,545 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+10:21:09,546 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+10:21:09,546 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+10:21:09,547 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+10:21:09,547 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+10:21:09,547 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+10:21:09,549 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+10:21:09,550 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+10:21:09,550 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+10:21:09,550 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+10:21:09,550 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+10:21:09,550 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+10:21:09,550 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+10:21:09,551 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+10:21:09,551 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+10:21:09,551 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+10:21:09,551 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+10:21:09,552 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+10:21:09,571 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+10:21:09,581 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+10:21:09,583 DEBUG ClassPathXmlApplicationContext:649 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@5c30a9b0]
+10:21:09,584 DEBUG ClassPathXmlApplicationContext:673 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@50b472aa]
+10:21:09,586 DEBUG DefaultListableBeanFactory:669 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@47db50c5: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,businessDao,saveLogDao,limitCache,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,Server,jedisPoolConfig,jedisPool,redisClient,master,slave,dataSource,sqlSessionFactory,sqlSession,dynamicSqlSession,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdvice,allManagerMethod,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
+10:21:09,587 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+10:21:09,587 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+10:21:09,587 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+10:21:09,587 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+10:21:09,587 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+10:21:09,587 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'businessDao'
+10:21:09,588 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'businessDao'
+10:21:09,589 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:09,590 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:09,591 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
+10:21:09,593 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+10:21:09,595 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+10:21:09,595 DEBUG BeanFactoryAdvisorRetrievalHelper:87 - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:09,595 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:09,595 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:09,597 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' to allow for resolving potential circular references
+10:21:09,601 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'allManagerMethod'
+10:21:09,611 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'allManagerMethod'
+10:21:09,612 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:09,614 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' to allow for resolving potential circular references
+10:21:09,616 DEBUG BeanFactoryAdvisorRetrievalHelper:87 - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:09,617 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:09,617 DEBUG BeanFactoryAdvisorRetrievalHelper:87 - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:09,617 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:09,711 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+10:21:09,712 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:09,712 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:09,718 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.dao.impl.BusinessDaoImpl]: AutowiredFieldElement for protected org.springmore.core.datasource.DynamicSqlSessionTemplate com.ymei_inc.ymadvert.dao.impl.BusinessDaoImpl.session
+10:21:09,718 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'businessDao' to allow for resolving potential circular references
+10:21:09,721 DEBUG InjectionMetadata:85 - Processing injected method of bean 'businessDao': AutowiredFieldElement for protected org.springmore.core.datasource.DynamicSqlSessionTemplate com.ymei_inc.ymadvert.dao.impl.BusinessDaoImpl.session
+10:21:09,723 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:09,723 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:09,728 DEBUG LogFactory:46 - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+10:21:09,729 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'dynamicSqlSession'
+10:21:09,729 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'dynamicSqlSession'
+10:21:09,730 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:09,730 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:09,731 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'sqlSession'
+10:21:09,732 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'sqlSession'
+10:21:09,732 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:09,732 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:09,733 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'sqlSessionFactory'
+10:21:09,733 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'sqlSessionFactory'
+10:21:09,734 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'sqlSessionFactory' to allow for resolving potential circular references
+10:21:09,737 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'dataSource'
+10:21:09,737 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'dataSource'
+10:21:09,738 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:09,752 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:09,754 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+10:21:09,757 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'master'
+10:21:09,758 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'master'
+10:21:09,758 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:09,758 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:09,798  INFO MLog:80 - MLog clients using log4j logging.
+10:21:09,899  INFO C3P0Registry:204 - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+10:21:09,908 DEBUG DynamicPooledDataSourceManagerMBean:236 - MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge3l09m1isgrwfffwcn9|ea6147e] registered.
+10:21:09,917 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'master' to allow for resolving potential circular references
+10:21:09,931 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:09,931 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:09,931 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:09,931 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:09,962 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'master'
+10:21:09,963 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'slave'
+10:21:09,963 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'slave'
+10:21:09,963 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:09,963 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:09,967 DEBUG DynamicPooledDataSourceManagerMBean:236 - MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge3l09m1isgrwfffwcn9|d86a6f] registered.
+10:21:09,968 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'slave' to allow for resolving potential circular references
+10:21:09,969 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:09,969 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:09,970 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:09,970 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:09,972 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'slave'
+10:21:09,974 DEBUG DefaultListableBeanFactory:1595 - Invoking afterPropertiesSet() on bean with name 'dataSource'
+10:21:09,975 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:09,975 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:09,975 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:09,975 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:09,978 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'dataSource'
+10:21:09,979 DEBUG DefaultListableBeanFactory:1595 - Invoking afterPropertiesSet() on bean with name 'sqlSessionFactory'
+10:21:10,123 DEBUG SqlSessionFactoryBean:46 - Parsed configuration file: 'class path resource [mybatis/mybatis-config.xml]'
+10:21:10,124 DEBUG SqlSessionFactoryBean:46 - Property 'mapperLocations' was not specified or no matching resources found
+10:21:10,125 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,125 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,125 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,126 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,128 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'sqlSessionFactory'
+10:21:10,129 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,129 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,129 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,129 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,137 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'sqlSession' to allow for resolving potential circular references
+10:21:10,138 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,138 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,138 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,139 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,142 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'sqlSession'
+10:21:10,143 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'dynamicSqlSession' to allow for resolving potential circular references
+10:21:10,144 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,144 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,145 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,145 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,147 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'dynamicSqlSession'
+10:21:10,147 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'businessDao' to bean named 'dynamicSqlSession'
+10:21:10,148 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,148 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,148 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,148 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,150 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'businessDao'
+10:21:10,151 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'saveLogDao'
+10:21:10,151 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'saveLogDao'
+10:21:10,151 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,151 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,151 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.dao.impl.SaveLogDaoImpl]: AutowiredFieldElement for protected org.springmore.core.datasource.DynamicSqlSessionTemplate com.ymei_inc.ymadvert.dao.impl.SaveLogDaoImpl.session
+10:21:10,151 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'saveLogDao' to allow for resolving potential circular references
+10:21:10,152 DEBUG InjectionMetadata:85 - Processing injected method of bean 'saveLogDao': AutowiredFieldElement for protected org.springmore.core.datasource.DynamicSqlSessionTemplate com.ymei_inc.ymadvert.dao.impl.SaveLogDaoImpl.session
+10:21:10,152 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'dynamicSqlSession'
+10:21:10,152 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'saveLogDao' to bean named 'dynamicSqlSession'
+10:21:10,153 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,153 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,153 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,153 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,154 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'saveLogDao'
+10:21:10,154 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'limitCache'
+10:21:10,154 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'limitCache'
+10:21:10,154 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,154 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,160 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.redis.LimitCache]: AutowiredFieldElement for private redis.clients.jedis.JedisPool com.ymei_inc.ymadvert.redis.BasicRedisSupport.jedisPool
+10:21:10,161 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.redis.LimitCache]: AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.RedisClient com.ymei_inc.ymadvert.redis.BasicRedisSupport.redisClient
+10:21:10,161 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'limitCache' to allow for resolving potential circular references
+10:21:10,162 DEBUG InjectionMetadata:85 - Processing injected method of bean 'limitCache': AutowiredFieldElement for private redis.clients.jedis.JedisPool com.ymei_inc.ymadvert.redis.BasicRedisSupport.jedisPool
+10:21:10,162 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'jedisPool'
+10:21:10,162 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'jedisPool'
+10:21:10,163 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,163 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,164 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'jedisPoolConfig'
+10:21:10,164 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'jedisPoolConfig'
+10:21:10,164 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,165 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,166 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'jedisPoolConfig' to allow for resolving potential circular references
+10:21:10,168 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,169 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,169 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,169 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,172 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'jedisPoolConfig'
+10:21:10,182 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'jedisPool' to allow for resolving potential circular references
+10:21:10,183 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,184 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,184 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,184 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,187 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'jedisPool'
+10:21:10,187 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'limitCache' to bean named 'jedisPool'
+10:21:10,187 DEBUG InjectionMetadata:85 - Processing injected method of bean 'limitCache': AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.RedisClient com.ymei_inc.ymadvert.redis.BasicRedisSupport.redisClient
+10:21:10,187 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'redisClient'
+10:21:10,188 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'redisClient'
+10:21:10,188 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,188 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,188 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'jedisPool'
+10:21:10,190 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'redisClient' to allow for resolving potential circular references
+10:21:10,191 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,192 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,192 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,192 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,193 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'redisClient'
+10:21:10,193 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'limitCache' to bean named 'redisClient'
+10:21:10,193 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,193 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,193 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,193 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,194 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'limitCache'
+10:21:10,194 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+10:21:10,194 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'Server'
+10:21:10,194 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'Server'
+10:21:10,194 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,195 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,406 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'Server' to allow for resolving potential circular references
+10:21:10,410 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'Connector'
+10:21:10,430 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,430 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,440 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,440 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,441 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,441 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,449 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'Connector'
+10:21:10,449 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'handlers'
+10:21:10,450 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,450 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,452 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletContextHandler#3d921e20'
+10:21:10,455 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,456 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,501 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.server.session.SessionHandler#76f2b07d'
+10:21:10,501 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,501 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,509 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,510 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,510 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,510 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,513 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.server.session.SessionHandler#76f2b07d'
+10:21:10,514 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletHandler#c46bcd4'
+10:21:10,514 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,514 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,531 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.FilterHolder#2781e022'
+10:21:10,532 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,532 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,535 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'com.ymei_inc.ymadvert.filter.MD5Filter#6ee52dcd'
+10:21:10,536 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,537 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,538 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,538 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,538 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,539 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,539 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'com.ymei_inc.ymadvert.filter.MD5Filter#6ee52dcd'
+10:21:10,540 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,540 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,540 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,540 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,542 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.FilterHolder#2781e022'
+10:21:10,542 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.FilterMapping#5faeada1'
+10:21:10,543 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,543 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,544 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,544 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,544 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,545 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,545 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.FilterMapping#5faeada1'
+10:21:10,546 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#2bbf4b8b'
+10:21:10,546 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,546 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,549 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'com.ymei_inc.ymadvert.servlet.UserActionServlet#ea1a8d5'
+10:21:10,551 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,551 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,557 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.UserActionServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.UserActionServlet.limitCache
+10:21:10,557 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.UserActionServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.UserActionServlet.saveLogDao
+10:21:10,559 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.UserActionServlet#ea1a8d5': AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.UserActionServlet.limitCache
+10:21:10,559 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'limitCache'
+10:21:10,559 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.UserActionServlet#ea1a8d5' to bean named 'limitCache'
+10:21:10,559 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.UserActionServlet#ea1a8d5': AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.UserActionServlet.saveLogDao
+10:21:10,560 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'saveLogDao'
+10:21:10,560 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.UserActionServlet#ea1a8d5' to bean named 'saveLogDao'
+10:21:10,560 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,560 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,560 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,560 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,561 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'com.ymei_inc.ymadvert.servlet.UserActionServlet#ea1a8d5'
+10:21:10,562 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,562 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,562 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,563 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,565 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#2bbf4b8b'
+10:21:10,565 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#52feb982'
+10:21:10,565 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,565 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,566 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'com.ymei_inc.ymadvert.servlet.ADInitServlet#33c7e1bb'
+10:21:10,566 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,566 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,567 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.ADInitServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.ADInitServlet.limitCache
+10:21:10,568 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.ADInitServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.ADInitServlet.saveLogDao
+10:21:10,569 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.ADInitServlet#33c7e1bb': AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.ADInitServlet.limitCache
+10:21:10,569 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'limitCache'
+10:21:10,569 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.ADInitServlet#33c7e1bb' to bean named 'limitCache'
+10:21:10,569 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.ADInitServlet#33c7e1bb': AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.ADInitServlet.saveLogDao
+10:21:10,570 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'saveLogDao'
+10:21:10,570 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.ADInitServlet#33c7e1bb' to bean named 'saveLogDao'
+10:21:10,570 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,570 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,571 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,571 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,571 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'com.ymei_inc.ymadvert.servlet.ADInitServlet#33c7e1bb'
+10:21:10,572 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,572 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,572 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,572 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,572 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#52feb982'
+10:21:10,572 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#3043fe0e'
+10:21:10,573 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,573 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,573 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'com.ymei_inc.ymadvert.servlet.SdkJarServlet#76b0bfab'
+10:21:10,574 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,574 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,576 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.SdkJarServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.SdkJarServlet.limitCache
+10:21:10,576 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.SdkJarServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.SdkJarServlet.saveLogDao
+10:21:10,576 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.SdkJarServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.IBusinessDao com.ymei_inc.ymadvert.servlet.SdkJarServlet.businessDao
+10:21:10,577 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.SdkJarServlet#76b0bfab': AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.SdkJarServlet.limitCache
+10:21:10,577 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'limitCache'
+10:21:10,577 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.SdkJarServlet#76b0bfab' to bean named 'limitCache'
+10:21:10,577 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.SdkJarServlet#76b0bfab': AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.SdkJarServlet.saveLogDao
+10:21:10,577 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'saveLogDao'
+10:21:10,578 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.SdkJarServlet#76b0bfab' to bean named 'saveLogDao'
+10:21:10,578 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.SdkJarServlet#76b0bfab': AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.IBusinessDao com.ymei_inc.ymadvert.servlet.SdkJarServlet.businessDao
+10:21:10,578 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'businessDao'
+10:21:10,578 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.SdkJarServlet#76b0bfab' to bean named 'businessDao'
+10:21:10,578 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,578 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,579 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,579 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,579 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'com.ymei_inc.ymadvert.servlet.SdkJarServlet#76b0bfab'
+10:21:10,579 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,580 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,580 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,580 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,580 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#3043fe0e'
+10:21:10,580 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#80503'
+10:21:10,581 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,581 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,581 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'com.ymei_inc.ymadvert.servlet.ADSettingServlet#bd8db5a'
+10:21:10,582 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,582 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,582 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.ADSettingServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.ADSettingServlet.limitCache
+10:21:10,583 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.ADSettingServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.ADSettingServlet.saveLogDao
+10:21:10,583 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.ADSettingServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.IBusinessDao com.ymei_inc.ymadvert.servlet.ADSettingServlet.businessDao
+10:21:10,584 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.ADSettingServlet#bd8db5a': AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.ADSettingServlet.limitCache
+10:21:10,584 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'limitCache'
+10:21:10,584 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.ADSettingServlet#bd8db5a' to bean named 'limitCache'
+10:21:10,584 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.ADSettingServlet#bd8db5a': AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.ADSettingServlet.saveLogDao
+10:21:10,585 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'saveLogDao'
+10:21:10,585 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.ADSettingServlet#bd8db5a' to bean named 'saveLogDao'
+10:21:10,585 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.ADSettingServlet#bd8db5a': AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.IBusinessDao com.ymei_inc.ymadvert.servlet.ADSettingServlet.businessDao
+10:21:10,585 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'businessDao'
+10:21:10,585 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.ADSettingServlet#bd8db5a' to bean named 'businessDao'
+10:21:10,585 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,586 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,586 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,586 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,586 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'com.ymei_inc.ymadvert.servlet.ADSettingServlet#bd8db5a'
+10:21:10,587 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,587 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,587 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,587 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,587 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#80503'
+10:21:10,588 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#480bdb19'
+10:21:10,588 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,588 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,588 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'com.ymei_inc.ymadvert.servlet.ADShowServlet#69a3d1d'
+10:21:10,589 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,589 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,591 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.ADShowServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.ADShowServlet.limitCache
+10:21:10,591 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.ADShowServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.ADShowServlet.saveLogDao
+10:21:10,591 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.ADShowServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.IBusinessDao com.ymei_inc.ymadvert.servlet.ADShowServlet.businessDao
+10:21:10,592 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.ADShowServlet#69a3d1d': AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.ADShowServlet.limitCache
+10:21:10,592 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'limitCache'
+10:21:10,592 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.ADShowServlet#69a3d1d' to bean named 'limitCache'
+10:21:10,592 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.ADShowServlet#69a3d1d': AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.ADShowServlet.saveLogDao
+10:21:10,592 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'saveLogDao'
+10:21:10,592 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.ADShowServlet#69a3d1d' to bean named 'saveLogDao'
+10:21:10,593 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.ADShowServlet#69a3d1d': AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.IBusinessDao com.ymei_inc.ymadvert.servlet.ADShowServlet.businessDao
+10:21:10,593 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'businessDao'
+10:21:10,593 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.ADShowServlet#69a3d1d' to bean named 'businessDao'
+10:21:10,593 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,593 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,593 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,593 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,594 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'com.ymei_inc.ymadvert.servlet.ADShowServlet#69a3d1d'
+10:21:10,594 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,594 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,594 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,595 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,595 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#480bdb19'
+10:21:10,595 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#3cb1ffe6'
+10:21:10,595 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,595 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,596 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'com.ymei_inc.ymadvert.servlet.TestServlet#7d70d1b1'
+10:21:10,596 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,596 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,597 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.TestServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.TestServlet.limitCache
+10:21:10,597 DEBUG InjectionMetadata:71 - Registered injected element on class [com.ymei_inc.ymadvert.servlet.TestServlet]: AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.TestServlet.saveLogDao
+10:21:10,598 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.TestServlet#7d70d1b1': AutowiredFieldElement for private com.ymei_inc.ymadvert.redis.LimitCache com.ymei_inc.ymadvert.servlet.TestServlet.limitCache
+10:21:10,598 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'limitCache'
+10:21:10,598 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.TestServlet#7d70d1b1' to bean named 'limitCache'
+10:21:10,598 DEBUG InjectionMetadata:85 - Processing injected method of bean 'com.ymei_inc.ymadvert.servlet.TestServlet#7d70d1b1': AutowiredFieldElement for private com.ymei_inc.ymadvert.dao.ISaveLogDao com.ymei_inc.ymadvert.servlet.TestServlet.saveLogDao
+10:21:10,599 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'saveLogDao'
+10:21:10,599 DEBUG AutowiredAnnotationBeanPostProcessor:427 - Autowiring by type from bean name 'com.ymei_inc.ymadvert.servlet.TestServlet#7d70d1b1' to bean named 'saveLogDao'
+10:21:10,599 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,599 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,599 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,599 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,600 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'com.ymei_inc.ymadvert.servlet.TestServlet#7d70d1b1'
+10:21:10,600 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,600 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,600 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,600 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,601 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletHolder#3cb1ffe6'
+10:21:10,601 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#467aecef'
+10:21:10,601 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,602 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,603 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,603 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,603 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,604 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,604 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#467aecef'
+10:21:10,604 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#7e2d773b'
+10:21:10,604 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,605 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,605 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,605 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,605 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,605 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,606 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#7e2d773b'
+10:21:10,606 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#307f6b8c'
+10:21:10,606 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,606 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,606 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,606 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,607 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,607 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,607 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#307f6b8c'
+10:21:10,607 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#6f195bc3'
+10:21:10,607 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,608 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,608 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,608 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,608 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,609 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,609 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#6f195bc3'
+10:21:10,609 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#1a8a8f7c'
+10:21:10,609 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,609 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,610 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,610 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,610 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,610 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,611 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#1a8a8f7c'
+10:21:10,611 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#631330c'
+10:21:10,611 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,611 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,612 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,626 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,626 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,626 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,626 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletMapping#631330c'
+10:21:10,629 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,629 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,629 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,629 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,631 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletHandler#c46bcd4'
+10:21:10,632 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,632 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,632 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,632 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,639 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.servlet.ServletContextHandler#3d921e20'
+10:21:10,639 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.eclipse.jetty.server.handler.DefaultHandler#fad74ee'
+10:21:10,640 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,640 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,646 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,646 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,646 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,646 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,647 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.eclipse.jetty.server.handler.DefaultHandler#fad74ee'
+10:21:10,648 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,648 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,648 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,648 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,649 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'handlers'
+10:21:10,650 DEBUG DefaultListableBeanFactory:1653 - Invoking init method  'start' on bean with name 'Server'
+10:21:10,716 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,716 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,716 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,716 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,719 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'Server'
+10:21:10,719 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'jedisPoolConfig'
+10:21:10,720 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'jedisPool'
+10:21:10,720 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'redisClient'
+10:21:10,720 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'master'
+10:21:10,720 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'slave'
+10:21:10,720 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'dataSource'
+10:21:10,720 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'sqlSessionFactory'
+10:21:10,720 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'sqlSession'
+10:21:10,720 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'dynamicSqlSession'
+10:21:10,721 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'transactionManager'
+10:21:10,721 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'transactionManager'
+10:21:10,721 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,721 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,728 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+10:21:10,730 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'dataSource'
+10:21:10,730 DEBUG DefaultListableBeanFactory:1595 - Invoking afterPropertiesSet() on bean with name 'transactionManager'
+10:21:10,730 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,731 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,731 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,731 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,732 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'transactionManager'
+10:21:10,732 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+10:21:10,732 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+10:21:10,732 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+10:21:10,733 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0' to allow for resolving potential circular references
+10:21:10,734 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+10:21:10,734 DEBUG DefaultListableBeanFactory:1595 - Invoking afterPropertiesSet() on bean with name 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+10:21:10,734 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+10:21:10,734 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,734 DEBUG DefaultListableBeanFactory:220 - Creating shared instance of singleton bean 'txAdvice'
+10:21:10,734 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean 'txAdvice'
+10:21:10,735 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean 'txAdvice' to allow for resolving potential circular references
+10:21:10,735 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'transactionManager'
+10:21:10,735 DEBUG DefaultListableBeanFactory:449 - Creating instance of bean '(inner bean)'
+10:21:10,735 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,735 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,737 DEBUG NameMatchTransactionAttributeSource:96 - Adding transactional method [save*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+10:21:10,737 DEBUG NameMatchTransactionAttributeSource:96 - Adding transactional method [delete*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+10:21:10,737 DEBUG NameMatchTransactionAttributeSource:96 - Adding transactional method [update*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+10:21:10,737 DEBUG NameMatchTransactionAttributeSource:96 - Adding transactional method [proc*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+10:21:10,737 DEBUG NameMatchTransactionAttributeSource:96 - Adding transactional method [select*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+10:21:10,737 DEBUG NameMatchTransactionAttributeSource:96 - Adding transactional method [*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+10:21:10,737 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,738 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,738 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+10:21:10,738 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,739 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean '(inner bean)'
+10:21:10,739 DEBUG DefaultListableBeanFactory:1595 - Invoking afterPropertiesSet() on bean with name 'txAdvice'
+10:21:10,739 DEBUG DefaultListableBeanFactory:477 - Finished creating instance of bean 'txAdvice'
+10:21:10,740 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+10:21:10,740 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+10:21:10,740 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+10:21:10,741 DEBUG ClassPathXmlApplicationContext:700 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@2a39fe6a]
+10:21:10,741 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'lifecycleProcessor'
+10:21:10,742 DEBUG DefaultListableBeanFactory:249 - Returning cached instance of singleton bean 'sqlSessionFactory'
+10:21:10,742 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+10:21:10,743 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+10:21:10,743 DEBUG PropertySourcesPropertyResolver:103 - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+10:21:10,743  INFO App:40 - server Start successfully
+10:25:58,989  INFO BasicRedisSupport:27 - getResource redis size is -------->>>0 getNumIdle: 0 getNumWaiters: 0
+10:26:00,000 ERROR BasicRedisSupport:30 - getRedisClent error : Could not get a resource from the pool
+10:26:52,096  INFO BasicRedisSupport:27 - getResource redis size is -------->>>0 getNumIdle: 0 getNumWaiters: 0
+10:26:52,123  INFO BasicRedisSupport:36 - before close redis size is -------->>>1 getNumIdle: 0 getNumWaiters: 0
+10:26:52,124  INFO BasicRedisSupport:40 - after close redis size is -------->>>0 getNumIdle: 1 getNumWaiters: 0
+10:27:12,273  INFO BasicRedisSupport:27 - getResource redis size is -------->>>0 getNumIdle: 10 getNumWaiters: 0
+10:27:12,275  INFO BasicRedisSupport:36 - before close redis size is -------->>>1 getNumIdle: 9 getNumWaiters: 0
+10:27:12,276  INFO BasicRedisSupport:40 - after close redis size is -------->>>0 getNumIdle: 10 getNumWaiters: 0

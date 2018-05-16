@@ -1,0 +1,63 @@
+<assembly
+	xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+	
+	<id>bin</id>
+	<formats>
+		<format>tar.gz</format>
+	</formats>
+	<dependencySets>
+		<dependencySet>
+			<useProjectArtifact>true</useProjectArtifact>
+			<outputDirectory>lib</outputDirectory>
+			<scope>compile</scope>
+		</dependencySet>
+	</dependencySets>
+	<fileSets>
+		<fileSet>
+			<directory>src/main/resource/config</directory>
+			<outputDirectory>bin/config</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/resource/properties</directory>
+			<outputDirectory>bin/properties</outputDirectory>
+		</fileSet>
+		
+		<fileSet>
+			<directory>src/main/resource/display</directory>
+			<outputDirectory>bin/display</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/resource/mybatis</directory>
+			<outputDirectory>bin/mybatis</outputDirectory>
+		</fileSet>
+		
+		<fileSet>
+			<directory>src/main/resource/iplib</directory>
+			<outputDirectory>bin/iplib</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/resource/iplib</directory>
+			<outputDirectory>bin/iplib</outputDirectory>
+			<includes>
+				<include>*.dat</include>
+			</includes>
+		</fileSet>
+		
+		<fileSet>
+			<directory>src/main/resource/script</directory>
+			<outputDirectory></outputDirectory>
+		</fileSet>
+		
+		
+		
+		<fileSet>
+			<directory>src/main/resource/other</directory>
+			<outputDirectory>/</outputDirectory>
+			<includes>
+				<include>*.sh</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+</assembly>
